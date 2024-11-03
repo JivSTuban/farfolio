@@ -221,7 +221,7 @@ export const navLinks = [
   
   export const calculateSizes = (isSmall, isMobile, isTablet) => {
     return {
-      deskScale: isSmall ? 0.09 : isMobile ? 0.8 : 0.9,
+      deskScale: isSmall ? 0.06 : isMobile ? 0.8 : 0.9,
       deskPosition: isSmall ? [0, -1, 19] : isMobile ? [0, -1, 21] : [0, -1, 23],
       cubePosition: isSmall ? [4, -5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
       ringPosition:   
@@ -232,7 +232,14 @@ export const navLinks = [
       : isTablet 
       ? [-10, 4.2, 0] 
       : [-11, 4.2, 0],
-      targetPosition: isSmall ? [-7, -13, -10] : isMobile ? [-9, -13, -10] : isTablet ? [-11, -13, -10] : [-13, -13, -10],
-      lazerPosition: isSmall ? [5, -9, 0] : isMobile ? [6.5, -9, 0] : isTablet ? [9, -9, 0] : [10, -9, 0],
+      reactPosition: isSmall 
+        ? [5, 4, 0] 
+        : isMobile 
+        ? [9, 4, 0] 
+        : isTablet 
+        ? [10, 4, 0] 
+        : [11, 4, 0],
+      targetPosition: isSmall ? [-7, -9, -10] : isMobile ? [-9, -11, -10] : isTablet ? [-11, -13, -10] : [-13, -13, -10],
+      lazerPosition: isSmall ? [5, -6, 0] : isMobile ? [6.5, -7, 0] : isTablet ? [9, -9, 0] : [10, -9, 0],
     };
   };

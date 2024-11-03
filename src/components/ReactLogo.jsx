@@ -3,24 +3,17 @@ import { useGLTF } from '@react-three/drei';
 import { useFrame } from '@react-three/fiber';
 import { gsap } from 'gsap';
 
-export function ReactLogo({ isSmall, isMobile, isTablet, ...props }) {
+export function ReactLogo(props) {
   const { nodes, materials } = useGLTF('/models/react.glb');
   const groupRef = useRef();
   
   // Set initial position based on device size
   useEffect(() => {
     if (groupRef.current) {
-      const initialPosition = isSmall 
-        ? [3, 4, 0] 
-        : isMobile 
-        ? [5, 4, 0] 
-        : isTablet 
-        ? [9, 4, 0] 
-        : [11, 4, 0];
-        
+      const initialPosition = props.position;
       groupRef.current.position.set(...initialPosition);
     }
-  }, [isSmall, isMobile, isTablet]);
+  }, [props.position]);
 
   // Continuous rotation
   useFrame(() => {
