@@ -3,20 +3,11 @@ import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import { navLinks } from '../constants/index.js';
 
-const NavItems = ({ onClick = () => {} }) => {
-  const getOffset = (section) => {
-    const navbarHeight = document.querySelector('header')?.offsetHeight || 0;
-    let offset = -navbarHeight;
-    if (section === 'about') {
-      offset -= 100; // Adjust this value as needed for the "about" section
-    }else if (section === 'work') {
-      offset -= 210; // Adjust this value as needed for the "about" section
-    }else if (section === 'contact') {
-      offset -= 50; // Adjust this value as needed for the "about" section
-    }
-    return offset;
-  };
+const calculateOffset = () => {
+  return -(document.querySelector('header')?.offsetHeight || 0);
+};
 
+const NavItems = ({ onClick = () => {} }) => {
   return (
     <ul className="nav-ul">
       {navLinks.map((item) => (
@@ -26,8 +17,8 @@ const NavItems = ({ onClick = () => {} }) => {
             to={item.href.substring(1)} // Remove the '#' from href
             spy={true}
             smooth={true}
-            duration={100}
-            offset={getOffset(item.href.substring(1))} // Adjust for navbar height
+            duration={200}
+            offset={calculateOffset()} // Adjust for navbar height
             className="nav-li_a cursor-pointer"
           >
             {item.name}

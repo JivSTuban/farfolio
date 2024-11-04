@@ -37,16 +37,9 @@ function App() {
       isScrolling = true;
 
       let offset = -navbarHeight;
-      if (sections[currentSectionIndex] === 'about') {
-        offset -= 50; // Adjust this value as needed for the "about" section
-      }else if (sections[currentSectionIndex] === 'work') {
-        offset -= 110; // Adjust this value as needed for the "about" section
-      } else if (sections[currentSectionIndex] === 'contact') {
-        offset += 25; // Adjust this value as needed for the "about" section
-      }
 
       scroller.scrollTo(sections[currentSectionIndex], {
-        duration: 500,
+        duration: 200,
         delay: 0,
         smooth: 'easeInOutQuart',
         offset: offset,
@@ -54,7 +47,7 @@ function App() {
 
       setTimeout(() => {
         isScrolling = false;
-      }, 100); // Adjust the timeout to match the scroll duration
+      }, 200);
     };
 
     window.addEventListener('keydown', handleKeyDown);
@@ -76,7 +69,7 @@ function App() {
       <Element name="work" className="c-space my-40">
         <Projects />
       </Element>
-      <Element name="contact" className="c-space my-20">
+      <Element name="contact" className="c-space">
         <ContactFormWrapper>
           <Contact />
         </ContactFormWrapper>
