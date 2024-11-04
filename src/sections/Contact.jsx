@@ -8,6 +8,7 @@ import { Pikachu } from '../components/Pikachu.jsx';
 import { Canvas } from '@react-three/fiber';
 import { Center } from '@react-three/drei';
 
+
 const Contact = () => {
   const formRef = useRef();
 
@@ -67,22 +68,21 @@ const Contact = () => {
         },
       );
   };
-  const isWideScreen = useMediaQuery({ query: '(min-width: 768px)' });
+  const isWideScreen = useMediaQuery({ minWidth: 1024 });
 
   return (
     <>
       {alert.show && <Alert {...alert} />}
 
-      <div className="relative min-h-screen flex items-center justify-center flex-col">
-        <img src="/assets/terminal.png" alt="terminal-bg" className={`absolute inset-0 min-h-screen ${isWideScreen ? 'p-20':'p-0'}`} />
-
-        <div className="contact-container">
-          <h3 className="head-text">Let's talk</h3>
-          <p className="text-lg text-white-600 mt-3">
+      <div className="relative flex items-center justify-center flex-col p-4">
+        <div className="contact-container relative z-10 black bg-opacity-90 rounded-lg shadow-lg max-w-lg w-full sm:max-w-md">
+          <h3 className="head-text pt-5 text-center">Let's talk</h3>
+          <p className="text-lg text-gray-600 mt-4 text-center">
             Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to
             life, I’m here to help.
           </p>
 
+      
           <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col space-y-7">
             <label className="space-y-3">
               <span className="field-label">Full Name</span>
@@ -142,6 +142,7 @@ const Contact = () => {
               <img src="/assets/arrow-up.png" alt="arrow-up" className="field-btn_arrow" />
             </button>
           </form>
+        
         </div>
       </div>
     </>

@@ -231,14 +231,14 @@ export const navLinks = [
       ? [-9, 4.2, 0] 
       : isTablet 
       ? [-10, 4.2, 0] 
-      : [-11, 4.2, 0],
+      : [-12, 5.2, 0],
       reactPosition: isSmall 
         ? [5, 4, 0] 
         : isMobile 
         ? [9, 4, 0] 
         : isTablet 
         ? [10, 4, 0] 
-        : [11, 4, 0],
+        : [12, 5, 0],
       targetPosition: isSmall ? [-7, -9, -10] : isMobile ? [-9, -11, -10] : isTablet ? [-11, -13, -10] : [-13, -13, -10],
       lazerPosition: isSmall ? [5, -6, 0] : isMobile ? [6.5, -7, 0] : isTablet ? [9, -9, 0] : [10, -9, 0],
     };

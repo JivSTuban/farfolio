@@ -7,6 +7,7 @@ import Projects from "./sections/Projects";
 import { navLinks } from './constants';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
+import ContactFormWrapper from './components/ContactFormWrapper';
 
 function App() {
   useEffect(() => {
@@ -76,7 +77,9 @@ function App() {
         <Projects />
       </Element>
       <Element name="contact" className="c-space my-20">
-        <Contact />
+        <ContactFormWrapper>
+          <Contact />
+        </ContactFormWrapper>
       </Element>
       <Footer />
     </main>

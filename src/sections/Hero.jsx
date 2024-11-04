@@ -45,8 +45,7 @@ const Hero = () => {
       <>
       {alert.show && <Alert {...alert} />}
         <div className="w-full mx-auto flex flex-col mt-20 c-space gap-3">
-            <p className="xl:text-3xl md:text-2xl sm:text-xl text-3xl font-medium text-white text-center font-generalsans">
-              
+            <p className="lg:text-2xl md:text-xl sm:text-lg text-3xl font-medium text-white text-center font-generalsans">
                 Hi, I am Jiv <span className="waving-hand">👋</span>
             </p>
             <p className="hero_tag text-gray_gradient">Developing Websites and APIs</p>
