@@ -37,7 +37,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">Hi, I&apos;m Jiv Tuban</p>
               <p className="grid-subtext">
-                I am an aspiring web developer known for my friendly demeanor, good humor, and easy-going vibe, which has helped me build a wide and diverse network.
+                I am a web developer known for my friendly demeanor, good humor, and easy-going vibe, which has helped me build a wide and diverse network.
               </p>
             </div>
           </div>
