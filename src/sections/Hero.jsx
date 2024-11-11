@@ -70,8 +70,8 @@ const Hero = () => {
             </Canvas>
         </div>
         <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-          <a href="https://github.com/JivSTuban/JivSTuban/raw/main/Tuban_CV.pdf" download onClick={handleDownloadClick}>
-            <Button name="Download CV" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+          <a href="https://drive.google.com/file/d/1ZGC12GkLalDcdKqgBLGfbZY5LRJtmqXt/view?usp=drive_link" download onClick={handleDownloadClick}>
+            <Button name="View My CV" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
           </a>
       </div>
       </>
