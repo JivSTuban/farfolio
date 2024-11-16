@@ -13,6 +13,7 @@ import Button from '../components/Button.jsx'
 import { Link } from 'react-scroll'
 import Alert from '../components/Alert.jsx'
 import useAlert from '../hooks/useAlert.js'
+import CV from '../components/CV.jsx'
 
 const Hero = () => {
     const isMobile = useMediaQuery({minWidth: 440, maxWidth: 768})
@@ -21,10 +22,19 @@ const Hero = () => {
 
     const { alert, showAlert, hideAlert } = useAlert();
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [showCV, setShowCV] = useState(false);
 
-    const handleDownloadClick = () => {
-      showAlert({ show:true, text: 'Redirecting to my CV', type: 'success' });
+    const handleCVClick = (e) => {
+      e.preventDefault();
+      setShowCV(true);
+      document.body.style.overflow = 'hidden';
+      showAlert({ show:true, text: 'Displayed CV 😬', type: 'success' });
       setTimeout(hideAlert, 3000);
+    };
+
+    const handleCloseCV = () => {
+      setShowCV(false);
+      document.body.style.overflow = 'unset';
     };
 
     useEffect(() => {
@@ -43,9 +53,38 @@ const Hero = () => {
   return (
     
       <>
+      <style>
+        {`
+          .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+          }
+          .scrollbar-hide {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+        `}
+      </style>
       {alert.show && <Alert {...alert} />}
+      {showCV && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
+          <div className="relative h-[95vh] w-[95%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[50%] max-w-6xl shadow-3xl overflow-hidden rounded-2xl">
+            <button
+              onClick={handleCloseCV}
+              className="absolute right-2 top-2 sm:right-3 sm:top-3 md:right-4 md:top-4 z-10 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition-colors"
+            >
+              <span className="sr-only">Close</span>
+              <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+            <div className="h-full overflow-y-auto scrollbar-hide">
+              <CV />
+            </div>
+          </div>
+        </div>
+      )}
         <div className="w-full mx-auto flex flex-col mt-20 c-space gap-3">
-            <p className="lg:text-2xl md:text-xl sm:text-lg text-3xl font-medium text-white text-center font-generalsans">
+            <p className="lg:text-3xl md:text-xl sm:text-lg text-3xl font-medium text-white text-center font-generalsans">
                 Hi, I am Jiv <span className="waving-hand">👋</span>
             </p>
             <p className="hero_tag text-gray_gradient">Developing Websites and APIs</p>
@@ -70,7 +109,7 @@ const Hero = () => {
             </Canvas>
         </div>
         <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-          <a href="https://drive.google.com/file/d/1ZGC12GkLalDcdKqgBLGfbZY5LRJtmqXt/view?usp=drive_link" download onClick={handleDownloadClick}>
+          <a href="#" onClick={handleCVClick}>
             <Button name="View My CV" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
           </a>
       </div>
