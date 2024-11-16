@@ -23,7 +23,7 @@ const Hero = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
     const handleDownloadClick = () => {
-      showAlert({ show:true, text: 'CV downloaded successfully!', type: 'success' });
+      showAlert({ show:true, text: 'Redirecting to my CV', type: 'success' });
       setTimeout(hideAlert, 3000);
     };
 
