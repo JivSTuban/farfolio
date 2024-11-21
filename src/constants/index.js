@@ -25,7 +25,8 @@ export const navLinks = [
     {
       title: "TJ's - Human Resource System",
       desc: "TJ's Human Resource System is a comprehensive application designed to streamline HR processes and enhance employee management. Our system aims to provide an efficient and user-friendly interface for both managers and employees.",
-      subdesc: 'A comprehensive system built with Django and SQLite, featuring employee management, goal setting, time and attendance tracking, user profile management, leave management, and more. Utilizes HTML, CSS, Bootstrap, JavaScript, and Django-Templates for the frontend, with additional tools like Crispy, Django-Filter, Pillow, and Ruff.',  href: 'https://github.com/JivSTuban/TJ-Human-Resource',
+      subdesc: 'A comprehensive system built with Django and SQLite, featuring employee management, goal setting, time and attendance tracking, user profile management, leave management, and more. Utilizes HTML, CSS, Bootstrap, JavaScript, and Django-Templates for the frontend, with additional tools like Crispy, Django-Filter, Pillow, and Ruff.',
+      href: 'https://jiv.aetherrflare.studio/',
       texture: '/textures/project/project1.mp4',
       logo: '/assets/TJ_logo.png',
       logoStyle: {
