@@ -104,8 +104,7 @@ const About = () => {
             <div>
               <p className="grid-headtext">My Education</p>
               <p className="grid-subtext">
-                I am a third year student at <strong>Cebu Institute of Technology - University</strong> with a Bachelor&apos;s Degree in Information Technology major in Software Development.
-
+                I graduated with a Bachelor&apos;s Degree in Information Technology (Software Development) from <strong>Cebu Institute of Technology - University</strong>
               </p>
             </div>
           </div>
