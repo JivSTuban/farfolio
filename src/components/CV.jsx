@@ -3,8 +3,8 @@ import { Briefcase, Code2, GraduationCap, Lightbulb, Mail, MapPin, Phone, Star, 
 export default function CV() {
   return (
     <div className="text-gray-800 min-h-screen bg-gray-100">
-      <div className="container mx-auto">
-        <div className="grid gap-6 grid-cols-[1fr_2fr] sm:grid-cols-[1fr_2fr] md:grid-cols-[1fr_2.5fr] lg:grid-cols-[300px_1fr] bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className="container mx-auto p-4">
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-[1fr_2fr] md:grid-cols-[1fr_2.5fr] lg:grid-cols-[300px_1fr] bg-white shadow-lg rounded-lg overflow-hidden">
           {/* Sidebar */}
           <div className="bg-zinc-900 p-6 md:p-8 text-white">
             <div className="mb-8 text-center">
@@ -97,7 +97,7 @@ export default function CV() {
                 <h2 className="mb-4 flex items-center gap-2 text-2xl sm:text-3xl font-bold text-zinc-800">
                   <Lightbulb className="h-7 w-7 sm:h-8 sm:w-8" /> Projects
                 </h2>
-                <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-gray-50 p-6 rounded-lg hover:shadow-md transition-shadow">
                     <div className="flex flex-col h-full">
                       <div>
@@ -184,7 +184,7 @@ export default function CV() {
                   <Monitor className="h-7 w-7 sm:h-8 sm:w-8" /> Tech Stack
                 </h2>
                 <h3 className="mb-2 text-lg sm:text-xl font-semibold">FRAMEWORKS/LIBRARIES</h3>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm sm:text-base text-gray-600">
+                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 text-sm sm:text-base text-gray-600">
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     ASP.NET CORE
