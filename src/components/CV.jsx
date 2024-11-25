@@ -3,7 +3,7 @@ import { Briefcase, Code2, GraduationCap, Lightbulb, Mail, MapPin, Phone, Star, 
 export default function CV() {
   return (
     <div className="text-gray-800 min-h-screen bg-gray-100">
-      <div className="container mx-auto p-4">
+      <div className="container mx-auto">
         <div className="grid gap-6 grid-cols-1 sm:grid-cols-[1fr_2fr] md:grid-cols-[1fr_2.5fr] lg:grid-cols-[300px_1fr] bg-white shadow-lg rounded-lg overflow-hidden">
           {/* Sidebar */}
           <div className="bg-zinc-900 p-6 md:p-8 text-white">
