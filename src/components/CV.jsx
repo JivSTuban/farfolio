@@ -1,4 +1,4 @@
-import { Briefcase, Code2, GraduationCap, Lightbulb, Mail, MapPin, Phone, Star, User, Monitor, Award, ScrollText } from 'lucide-react'
+import { Briefcase, Code2, GraduationCap, Lightbulb, Mail, MapPin, Phone, Star, User, Monitor, Bike, ScrollText } from 'lucide-react'
 import Experience from './Experience'
 import Certifications from './Certifications'
 
@@ -44,9 +44,10 @@ export default function CV() {
 
               <div>
                 <h2 className="mb-3 flex items-center gap-2 text-xl font-semibold">
-                  <GraduationCap className="h-6 w-6" /> Hobbies
+                  <Bike className="h-6 w-6" /> Hobbies
                 </h2>
                 <ul className="list-inside list-disc space-y-1 text-sm sm:text-base text-zinc-400">
+                  <li>Cycling</li>
                   <li>Coding</li>
                   <li>Scripting</li>
                   <li>Sprinting</li>
@@ -178,7 +179,7 @@ export default function CV() {
               </section>
 
               <Certifications/>
-              
+
               <section>
                 <h2 className="mb-4 flex items-center gap-2 text-2xl sm:text-3xl font-bold text-zinc-800">
                   <Monitor className="h-7 w-7 sm:h-8 sm:w-8" /> Tech Stack
