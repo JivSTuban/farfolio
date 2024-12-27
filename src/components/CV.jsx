@@ -1,4 +1,6 @@
 import { Briefcase, Code2, GraduationCap, Lightbulb, Mail, MapPin, Phone, Star, User, Monitor, Award, ScrollText } from 'lucide-react'
+import Experience from './Experience'
+import Certifications from './Certifications'
 
 export default function CV() {
   return (
@@ -47,6 +49,8 @@ export default function CV() {
                 <ul className="list-inside list-disc space-y-1 text-sm sm:text-base text-zinc-400">
                   <li>Coding</li>
                   <li>Scripting</li>
+                  <li>Sprinting</li>
+                  <li>Looksmaxxing</li>
                   <li>Web Designing</li>
                   <li>Weight Lifting</li>
                 </ul>
@@ -57,10 +61,11 @@ export default function CV() {
                   <Star className="h-6 w-6" /> Skills
                 </h2>
                 <ul className="list-inside list-disc space-y-1 text-sm sm:text-base text-zinc-400">
-                  <li>Photo Editing</li>
+                  <li>API Integration</li>
                   <li>Web Design</li>
                   <li>Backend-End Development</li>
                   <li>Front-End Development</li>
+                  <li>Photo Editing</li>
                   <li>Debugging</li>
                   <li>Communication</li>
                   <li>Video Editing</li>
@@ -90,7 +95,7 @@ export default function CV() {
                 </h2>
                 <h3 className="text-md sm:text-lg font-semibold">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h3>
                 <p className="mt-1 text-sm sm:text-base text-gray-600">CEBU INSTITUTE OF TECHNOLOGY - UNIVERSITY</p>
-                <p className="mt-1 text-sm sm:text-base text-gray-600">Majoring in Web Development</p>
+                <p className="mt-1 text-sm sm:text-base text-gray-600">Majoring in Software Development</p>
               </section>
 
               <section>
@@ -161,24 +166,19 @@ export default function CV() {
                 <h2 className="mb-4 flex items-center gap-2 text-2xl sm:text-3xl font-bold text-zinc-800">
                   <Code2 className="h-7 w-7 sm:h-8 sm:w-8" /> Experience
                 </h2>
-                <div className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="text-lg sm:text-xl font-semibold">INTERNSHIP - JPMORGAN CHASE & CO</h3>
-                  <p className="mt-2 text-sm sm:text-base text-gray-600">REMOTE (VIRTUAL), NOVEMBER 2024</p>
+                <div className="space-y-4">
+                  <Experience
+                    title="INTERNSHIP"
+                    company="JPMORGAN CHASE & CO"
+                    date="NOVEMBER 2024"
+                    location="REMOTE (VIRTUAL)"
+                    certificateUrl="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_Ebhii2CfGr9wRxNEF_1731330290797_completion_certificate.pdf"
+                  />
                 </div>
               </section>
 
-              <section>
-                <h2 className="mb-4 flex items-center gap-2 text-2xl sm:text-3xl font-bold text-zinc-800">
-                  <ScrollText className="h-7 w-7 sm:h-8 sm:w-8" /> Certifications
-                </h2>
-                <ul className="list-inside list-disc space-y-2 text-sm sm:text-base text-gray-600">
-                  <li>PYTHON AND DJANGO FULL STACK WEB DEVELOPER BOOTCAMP - UDEMY</li>
-                  <li>THE COMPLETE 2023 PHP FULL STACK WEB DEVELOPER BOOTCAMP - UDEMY</li>
-                  <li>DIGITAL SKILLS: USER EXPERIENCE - ACCENTURE</li>
-                  <li>JAVA OBJECT ORIENTED PROGRAMMING CERTIFICATION 2024 - CODECHUM</li>
-                </ul>
-              </section>
-
+              <Certifications/>
+              
               <section>
                 <h2 className="mb-4 flex items-center gap-2 text-2xl sm:text-3xl font-bold text-zinc-800">
                   <Monitor className="h-7 w-7 sm:h-8 sm:w-8" /> Tech Stack

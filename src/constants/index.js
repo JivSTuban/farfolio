@@ -189,7 +189,7 @@ export const navLinks = [
       ],
     },
     {
-      title: 'Mitsu Realm - a 2D RPG',
+      title: 'Mitsu Realm - 2D RPG',
       desc: 'Mitsu Realm is a 2D java game that we created as our final project for our Object Oriented Programming class.',
       subdesc: 'Mitsu Realm was a crude and hard-coded project, but it was through this experience that I learned a lot about Object-Oriented Programming (OOP). The project involved creating game mechanics, character interactions, and a basic game loop, all while applying OOP principles such as encapsulation, inheritance, and polymorphism. Despite its simplicity, Mitsu Realm was a valuable learning experience that laid the foundation for my understanding of OOP.',
       href: 'https://github.com/JivSTuban/Mitsu-Realm',
