@@ -1,10 +1,10 @@
 import { extend, Canvas } from '@react-three/fiber'
 import { PerspectiveCamera } from '@react-three/drei'
 import React, { Suspense, useEffect, useState } from 'react'
-import { Computer } from '../components/Computer'
-import CanvasLoader from '../components/CanvasLoader'
+import { Computer } from '../components/Computer.jsx'
+import CanvasLoader from '../components/CanvasLoader.jsx'
 import { useMediaQuery } from 'react-responsive'
-import { calculateSizes } from '../constants'
+import { calculateSizes } from '../constants/index.js'
 import Target from '../components/Target.jsx'
 import { Lazer } from '../components/Lazer.jsx'
 import {ReactLogo} from '../components/ReactLogo.jsx'
@@ -49,21 +49,9 @@ const Hero = () => {
       };
     }, []);
 
-    const sizes = calculateSizes(isMobile, isTablet, isSmall)
+    const sizes = calculateSizes(isSmall, isMobile, isTablet, )
   return (
-    
-      <>
-      <style>
-        {`
-          .scrollbar-hide::-webkit-scrollbar {
-            display: none;
-          }
-          .scrollbar-hide {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-          }
-        `}
-      </style>
+    <>
       {alert.show && <Alert {...alert} />}
       {showCV && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
@@ -83,37 +71,41 @@ const Hero = () => {
           </div>
         </div>
       )}
-        <div className="w-full mx-auto flex flex-col mt-20 c-space gap-3">
-            <p className="lg:text-3xl md:text-xl sm:text-lg text-3xl font-medium text-white text-center font-generalsans">
-                Hi, I am Jiv <span className="waving-hand">👋</span>
-            </p>
-            <p className="hero_tag text-gray_gradient">Developing Websites and APIs</p>
-        </div>
-        <div className="w-full h-full absolute inset-0">
-            <Canvas className='w-full h-full'>
-                <Suspense fallback={<CanvasLoader/>}>
-                    <PerspectiveCamera makeDefault position={[0, 0, 30]} />
-                    <Computer Scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.4, 0, 0]} />
-                    <group>
-                        <Target position={sizes.targetPosition}/>
-                        <Lazer position={sizes.lazerPosition} rotation={[0, 0, 0]} scale={isMobile || isSmall ? 0.4 : 0.6}/>
-                        <ReactLogo 
-                            scale={isMobile || isSmall ? 0.3 : 0.5}
-                            position={sizes.reactPosition}
-                        />
-                        <Labubu windowWidth={windowWidth} position={sizes.ringPosition} scale={isMobile || isSmall ? 3 : 4.5} rotation={[0,0.1,0]} />
-                    </group>
-                    <ambientLight intensity={1} />
-                    <directionalLight intensity={1} position={[10, 10, 10]} />
-                </Suspense>
-            </Canvas>
-        </div>
-        <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
-          <a href="#" onClick={handleCVClick}>
-            <Button name="View My CV" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
-          </a>
+      <div className="hero_container">
+       <div className="hero_content">
+         <p className="lg:text-3xl md:text-xl sm:text-lg text-3xl font-medium text-white text-center font-generalsans mb-4">
+           Hi, I am Jiv <span className="waving-hand">👋</span>
+         </p>
+         <p className="hero_tag text-gray_gradient">
+           Developing Websites and APIs
+         </p>
+       </div>
+       <div className="relative h-[60vh] md:h-[70vh]">
+         <Canvas className='w-full h-full'>
+           <Suspense fallback={<CanvasLoader/>}>
+             <PerspectiveCamera makeDefault position={[0, 0, 30]} />
+             <Computer Scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.4, 0, 0]} />
+             <group>
+               <Target position={sizes.targetPosition}/>
+               <Lazer position={sizes.lazerPosition} rotation={[0, 0, 0]} scale={isMobile || isSmall ? 0.4 : 0.6}/>
+               <ReactLogo
+                 scale={isMobile || isSmall ? 0.3 : 0.5}
+                 position={sizes.reactPosition}
+               />
+               <Labubu windowWidth={windowWidth} position={sizes.ringPosition} scale={isMobile || isSmall ? 3 : 4.5} rotation={[0,0.1,0]} />
+             </group>
+             <ambientLight intensity={1} />
+             <directionalLight intensity={1} position={[10, 10, 10]} />
+           </Suspense>
+         </Canvas>
+       </div>
+       <div className="absolute bottom-8 sm:bottom-10 left-0 right-0 w-full z-10 c-space">
+         <a href="#" onClick={handleCVClick}>
+           <Button name="View My CV" isBeam containerClass="sm:w-fit w-full sm:min-w-96" />
+         </a>
+       </div>
       </div>
-      </>
+    </>
   )
 }
 
