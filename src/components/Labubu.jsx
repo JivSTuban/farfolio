@@ -6,41 +6,72 @@ Source: https://sketchfab.com/3d-models/labubu-fbe43a040f8b4c589c14509b23d40c78
 Title: LABUBU
 */
 
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useGLTF } from '@react-three/drei'
 import { gsap } from 'gsap'
 
 export function Labubu({ windowWidth, isOpen, ...props }) {
   const { nodes, materials } = useGLTF('/models/labubu.glb')
   const groupRef = useRef()
-  const [isHovered, setIsHovered] = useState(false)
+  const rotationTween = useRef(null)
+
+  useEffect(() => {
+    // Initial slow rotation
+    rotationTween.current = gsap.to(groupRef.current.rotation, {
+      y: Math.PI * 2,
+      duration: 12,
+      ease: "linear",
+      repeat: -1
+    })
+
+    return () => {
+      if (rotationTween.current) {
+        rotationTween.current.kill()
+      }
+    }
+  }, [])
 
   const handleMouseEnter = () => {
-        gsap.to(groupRef.current.position, {
-            y: -window.innerHeight / 97,
-            duration: windowWidth < 768 ? 1.5 : 1,
-            ease: 'bounce.out',
-            yoyo: true,
+    if (rotationTween.current) {
+      rotationTween.current.kill()
+    }
+
+    // Faster rotation on hover with smooth acceleration
+    gsap.to(groupRef.current.rotation, {
+      y: groupRef.current.rotation.y + Math.PI * 2,
+      duration: 1,
+      ease: "power2.in",
+      onComplete: () => {
+        rotationTween.current = gsap.to(groupRef.current.rotation, {
+          y: "+=6.28319", // 2π
+          duration: 0.5,
+          ease: "none",
+          repeat: -1
         })
-        setTimeout(() => {
-            setIsHovered(true)
-        }, windowWidth < 768 ? 1500 : 1000)
+      }
+    })
   }
 
+  const handleMouseLeave = () => {
+    if (rotationTween.current) {
+      rotationTween.current.kill()
+    }
 
-    useEffect(() => {
-        if (isHovered) {
-            gsap.to(groupRef.current.position, {
-                y: groupRef.current.position.y - 0.5,
-                duration: 1.5,
-                ease: 'bounce.out',
-                yoyo: true,
-                repeat: -1,
-              })
-            setIsHovered(false)
-        }
-    },[isHovered])
-
+    // Smooth deceleration to slow rotation
+    gsap.to(groupRef.current.rotation, {
+      y: groupRef.current.rotation.y + Math.PI * 2,
+      duration: 1,
+      ease: "power2.out",
+      onComplete: () => {
+        rotationTween.current = gsap.to(groupRef.current.rotation, {
+          y: "+=6.28319", // 2π
+          duration: 12,
+          ease: "linear",
+          repeat: -1
+        })
+      }
+    })
+  }
 
   return (
     <group
@@ -48,6 +79,7 @@ export function Labubu({ windowWidth, isOpen, ...props }) {
       {...props}
       dispose={null}
       onPointerEnter={handleMouseEnter}
+      onPointerLeave={handleMouseLeave}
     >
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh

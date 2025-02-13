@@ -49,7 +49,7 @@ const Hero = () => {
       };
     }, []);
 
-    const sizes = calculateSizes(isSmall, isMobile, isTablet, )
+    const sizes = calculateSizes(isSmall, isMobile, isTablet)
   return (
     <>
       {alert.show && <Alert {...alert} />}
@@ -86,13 +86,13 @@ const Hero = () => {
              <PerspectiveCamera makeDefault position={[0, 0, 30]} />
              <Computer Scale={sizes.deskScale} position={sizes.deskPosition} rotation={[0.4, 0, 0]} />
              <group>
-               <Target position={sizes.targetPosition}/>
-               <Lazer position={sizes.lazerPosition} rotation={[0, 0, 0]} scale={isMobile || isSmall ? 0.4 : 0.6}/>
+               <Target position={sizes.targetPosition} scale={isMobile || isSmall ? 0.3 : 0.6}/>
+               <Lazer position={sizes.lazerPosition} rotation={[0, 0, 0]} scale={isMobile || isSmall ? 0.5 : 0.6}/>
                <ReactLogo
-                 scale={isMobile || isSmall ? 0.3 : 0.5}
+                 scale={0.5}
                  position={sizes.reactPosition}
                />
-               <Labubu windowWidth={windowWidth} position={sizes.ringPosition} scale={isMobile || isSmall ? 3 : 4.5} rotation={[0,0.1,0]} />
+               <Labubu windowWidth={windowWidth} position={sizes.ringPosition} scale={isMobile || isSmall ? 4 : 4.5} rotation={[0,0.1,0]} />
              </group>
              <ambientLight intensity={1} />
              <directionalLight intensity={1} position={[10, 10, 10]} />
