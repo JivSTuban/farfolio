@@ -133,7 +133,7 @@ const About = () => {
 
       <div className="col-span-1 xl:row-span-4" ref={card3Ref}>
         <div className="grid-container">
-          <div className="rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center" ref={globeRef}>
+          <div className="globe-container" ref={globeRef}>
             <MemoizedGlobe
               height={326}
               width={326}
