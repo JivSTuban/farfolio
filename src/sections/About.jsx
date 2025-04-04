@@ -111,15 +111,15 @@ const About = () => {
             <img alt="ASP.NET" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg" />
             <img alt="Blazor" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blazor/blazor-original.svg" />
             <img alt="Django" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" />
-            <img alt="PHP" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+            <img alt="n8n" className="w-10 h-10" src="/assets/n8n-color.svg" />
             <img alt="Laravel" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
             <img alt="Git" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-            <img alt="HTML" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
-            <img alt="CSS" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+            <img alt="Supabase" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg" />
+            <img alt="Tailwind" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
             <img alt="JavaScript" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
             <img alt="React" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
             <img alt="Python" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" />
-            <img alt="GitHub" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            <img alt="Next" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" />
             <img alt="Vite" className="w-10 h-10" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" />
           </div>
           <div>

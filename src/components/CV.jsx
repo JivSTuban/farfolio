@@ -5,50 +5,50 @@ import Certifications from './Certifications'
 export default function CV() {
   return (
     <div className="text-gray-800 min-h-screen bg-gray-100">
-      <div className="max-w-[1400px] mx-auto">
-        <div className="grid gap-4 cv:gap-6 grid-cols-1 cv:grid-cols-[320px_1fr] shadow-lg rounded-lg overflow-hidden">
+      <div className="w-full max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-[1600px] xl:max-w-[1600px] 2xl:max-w-[1600px]">
+        <div className="grid gap-4 sm:gap-6 grid-cols-[25%_75%] shadow-lg rounded-lg overflow-hidden">
           {/* Sidebar */}
-          <div className="bg-zinc-900 p-4 sm:p-6 cv:p-8 text-white">
-            <div className="mb-16 text-center">
-              <div className="mb-4">
+          <div className="bg-zinc-900 p-4 sm:p-5 md:p-6 text-white">
+            <div className="mb-6 sm:mb-6 md:mb-8 text-center">
+              <div className="mb-3 sm:mb-4">
                 <img
                   src="https://avatars.githubusercontent.com/u/162428952?v=4"
                   alt="Profile"
-                  className="mx-auto rounded-full w-28 h-28 sm:w-32 sm:h-32 cv:w-40 cv:h-40 object-cover border-4 border-zinc-700"
+                  className="mx-auto rounded-full w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36 object-cover border-4 border-zinc-700"
                 />
               </div>
-              <h1 className="mb-2 text-2xl sm:text-3xl cv:text-4xl font-bold tracking-wider">JIV TUBAN</h1>
-              <p className="text-base sm:text-lg cv:text-xl text-zinc-400">
+              <h1 className="mb-1 sm:mb-2 text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold tracking-wider">JIV TUBAN</h1>
+              <p className="text-sm text-zinc-400">
                 FOUNDER | <a href="https://www.rotosystems.net" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-300 transition-colors">ROTO</a>
               </p>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 sm:space-y-5 md:space-y-6">
               <div>
-                <h2 className="mb-3 flex items-center gap-2 text-lg sm:text-xl font-semibold">
-                  <Briefcase className="h-5 w-5 sm:h-6 sm:w-6" /> Contact
+                <h2 className="mb-2 sm:mb-3 flex items-center gap-2 text-base sm:text-lg md:text-lg lg:text-lg font-semibold">
+                  <Briefcase className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-5 lg:w-5" /> Contact
                 </h2>
-                <div className="space-y-2 text-sm sm:text-base text-zinc-400">
+                <div className="space-y-2 text-sm md:text-sm lg:text-sm text-zinc-400">
                   <p className="flex items-center gap-2">
-                    <Phone className="h-4 w-4 sm:h-5 sm:w-5" /> 
+                    <Phone className="h-4 w-4 sm:h-4 sm:w-4 lg:h-4 lg:w-4 flex-shrink-0" /> 
                     <span className="break-all">+639292862564</span>
                   </p>
                   <p className="flex items-center gap-2">
-                    <Mail className="h-4 w-4 sm:h-5 sm:w-5" /> 
+                    <Mail className="h-4 w-4 sm:h-4 sm:w-4 lg:h-4 lg:w-4 flex-shrink-0" /> 
                     <span className="break-all">jivtuban14@gmail.com</span>
                   </p>
                   <p className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 sm:h-5 sm:w-5" /> 
+                    <MapPin className="h-4 w-4 sm:h-4 sm:w-4 lg:h-4 lg:w-4 flex-shrink-0" /> 
                     <span className="break-words">Babag, Lapu-Lapu City, Cebu, Philippines</span>
                   </p>
                 </div>
               </div>
 
               <div>
-                <h2 className="mb-3 flex items-center gap-2 text-lg sm:text-xl font-semibold">
-                  <Bike className="h-5 w-5 sm:h-6 sm:w-6" /> Hobbies
+                <h2 className="mb-2 sm:mb-3 flex items-center gap-2 text-base sm:text-lg md:text-lg lg:text-lg font-semibold">
+                  <Bike className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-5 lg:w-5" /> Hobbies
                 </h2>
-                <ul className="list-inside list-disc space-y-1 text-sm sm:text-base text-zinc-400">
+                <ul className="list-inside list-disc space-y-1 text-sm md:text-sm lg:text-sm text-zinc-400">
                   <li>Cycling</li>
                   <li>Coding</li>
                   <li>Scripting</li>
@@ -60,10 +60,10 @@ export default function CV() {
               </div>
 
               <div>
-                <h2 className="mb-3 flex items-center gap-2 text-lg sm:text-xl font-semibold">
-                  <Star className="h-5 w-5 sm:h-6 sm:w-6" /> Skills
+                <h2 className="mb-2 sm:mb-3 flex items-center gap-2 text-base sm:text-lg md:text-lg lg:text-lg font-semibold">
+                  <Star className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-5 lg:w-5" /> Skills
                 </h2>
-                <ul className="list-inside list-disc space-y-1 text-sm sm:text-base text-zinc-400">
+                <ul className="list-inside list-disc space-y-1 text-sm md:text-sm lg:text-sm text-zinc-400">
                   <li>AI Automation</li>
                   <li>AI Integration</li>
                   <li>Full-Stack Development</li>
@@ -79,13 +79,13 @@ export default function CV() {
           </div>
 
           {/* Main Content */}
-          <div className="p-4 sm:p-6 cv:p-8">
-            <div className="space-y-8">
+          <div className="p-4 sm:p-5 md:pl-2 md:pr-6 lg:pl-3 lg:pr-8 md:pt-6 md:pb-6 lg:pt-8 lg:pb-8">
+            <div className="space-y-6 sm:space-y-6 md:space-y-8">
               <section>
-                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl cv:text-3xl font-bold text-zinc-800">
-                  <User className="h-6 w-6 sm:h-7 sm:w-7" /> About Me
+                <h2 className="mb-3 sm:mb-3 md:mb-4 flex items-center gap-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-zinc-800">
+                  <User className="h-5 w-5 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-7 lg:w-7" /> About Me
                 </h2>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
+                <p className="text-sm md:text-sm lg:text-base text-gray-600 leading-relaxed">
                   Full-stack web developer specializing in creating intuitive user experiences and robust backend systems. 
                   Proven track record in building efficient web solutions. 
                   Strong problem-solving skills with a focus on writing clean, maintainable code. 
@@ -94,26 +94,37 @@ export default function CV() {
               </section>
 
               <section>
-                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl cv:text-3xl font-bold text-zinc-800">
-                  <GraduationCap className="h-6 w-6 sm:h-7 sm:w-7" /> Education
+                <h2 className="mb-3 sm:mb-3 md:mb-4 flex items-center gap-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-zinc-800">
+                  <Code2 className="h-5 w-5 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-7 lg:w-7" /> Experience
                 </h2>
-                <h3 className="text-base sm:text-lg font-semibold">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h3>
-                <p className="mt-1 text-sm sm:text-base text-gray-600">CEBU INSTITUTE OF TECHNOLOGY - UNIVERSITY</p>
-                <p className="mt-1 text-sm sm:text-base text-gray-600">Majoring in Software Development</p>
+                <div className="space-y-3 md:space-y-4">
+                  <Experience
+                    title="FREELANCE DEVELOPER"
+                    date="2024 - PRESENT"
+                    location="REMOTE"
+                  />
+                  <Experience
+                    title="INTERNSHIP"
+                    company="JPMORGAN CHASE & CO"
+                    date="NOVEMBER 2024"
+                    location="REMOTE"
+                    certificateUrl="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_Ebhii2CfGr9wRxNEF_1731330290797_completion_certificate.pdf"
+                  />
+                </div>
               </section>
 
               <section>
-                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl cv:text-3xl font-bold text-zinc-800">
-                  <Lightbulb className="h-6 w-6 sm:h-7 sm:w-7" /> Featured Work
+                <h2 className="mb-3 sm:mb-3 md:mb-4 flex items-center gap-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-zinc-800">
+                  <Lightbulb className="h-5 w-5 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-7 lg:w-7" /> Featured Work
                 </h2>
                 <div className="grid grid-cols-1 gap-4">
-                  <div className="bg-gray-50 p-4 sm:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
+                  <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
                     <div className="flex-grow">
-                      <h3 className="text-lg sm:text-xl font-semibold text-zinc-900 flex items-center gap-1">
+                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-1">
                         roto
                         <span className="inline-block w-2 h-2 mt-2 bg-yellow-400 rounded-full"></span>
                       </h3>
-                      <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
+                      <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-2 leading-relaxed">
                         A business automation platform helping companies run on autopilot. Features AI-powered solutions for lead generation, skip tracing, and lead conversion, enabling businesses to focus on closing deals while automating tedious tasks.
                       </p>
                       <div className="flex flex-wrap gap-2 mt-3">
@@ -136,12 +147,12 @@ export default function CV() {
                     </div>
                   </div>
 
-                  <div className="bg-gray-50 p-4 sm:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
+                  <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
                     <div className="flex-grow">
-                      <h3 className="text-lg sm:text-xl font-semibold text-zinc-900 flex items-center gap-2">
+                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-2">
                         Austin McClain
                       </h3>
-                      <p className="text-sm sm:text-base text-gray-600 mt-2 leading-relaxed">
+                      <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-2 leading-relaxed">
                         A commissioned professional portfolio website designed and developed for client Austin McClain. Features a clean, modern interface showcasing the client's work, services, and contact information with responsive design for optimal viewing across all devices.
                       </p>
                       <div className="flex flex-wrap gap-2 mt-3">
@@ -168,27 +179,21 @@ export default function CV() {
               </section>
 
               <section>
-                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl cv:text-3xl font-bold text-zinc-800">
-                  <Code2 className="h-6 w-6 sm:h-7 sm:w-7" /> Experience
+                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl md:text-3xl font-bold text-zinc-800">
+                  <GraduationCap className="h-6 w-6 sm:h-7 sm:w-7" /> Education
                 </h2>
-                <div className="space-y-4">
-                  <Experience
-                    title="INTERNSHIP"
-                    company="JPMORGAN CHASE & CO"
-                    date="NOVEMBER 2024"
-                    location="REMOTE (VIRTUAL)"
-                    certificateUrl="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_Ebhii2CfGr9wRxNEF_1731330290797_completion_certificate.pdf"
-                  />
-                </div>
+                <h3 className="text-base sm:text-lg font-semibold">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</h3>
+                <p className="mt-1 text-sm sm:text-base text-gray-600">CEBU INSTITUTE OF TECHNOLOGY - UNIVERSITY</p>
+                <p className="mt-1 text-sm sm:text-base text-gray-600">Majoring in Software Development</p>
               </section>
 
               <Certifications/>
 
               <section>
-                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl cv:text-3xl font-bold text-zinc-800">
+                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl md:text-3xl font-bold text-zinc-800">
                   <Monitor className="h-6 w-6 sm:h-7 sm:w-7" /> Tech Stack
                 </h2>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm sm:text-base text-gray-600">
+                <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm sm:text-base text-gray-600">
                   <li className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                     ASP.NET CORE

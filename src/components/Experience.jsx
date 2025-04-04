@@ -6,11 +6,11 @@ const Experience = ({ title, company, date, location, certificateUrl }) => {
         <h3 className="text-lg sm:text-xl font-semibold">
         {certificateUrl ? (
             <a href={certificateUrl} target="_blank" rel="noopener noreferrer" className="underline">
-            {title} - {company}
+            {company ? `${title} - ${company}` : title}
             </a>
         ) : (
             <>
-            {title} - {company}
+            {company ? `${title} - ${company}` : title}
             </>
         )}
         </h3>
