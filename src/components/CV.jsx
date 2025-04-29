@@ -63,17 +63,36 @@ export default function CV() {
                 <h2 className="mb-2 sm:mb-3 flex items-center gap-2 text-base sm:text-lg md:text-lg lg:text-lg font-semibold">
                   <Star className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-5 lg:w-5" /> Skills
                 </h2>
-                <ul className="list-inside list-disc space-y-1 text-sm md:text-sm lg:text-sm text-zinc-400">
-                  <li>AI Automation</li>
-                  <li>AI Integration</li>
-                  <li>Full-Stack Development</li>
-                  <li>API Integration</li>
-                  <li>Micro Services</li>
-                  <li>Lead Generation</li>
-                  <li>Debugging</li>
-                  <li>Communication</li>
-                  <li>Video Editing</li>
-                </ul>
+                <div className="space-y-3 text-sm md:text-sm lg:text-sm text-zinc-400">
+                  <div>
+                    <h3 className="text-white mb-1">Backend Development</h3>
+                    <p>Spring Boot, Django, FastAPI, Flask, ASP.NET Core, Laravel, Supabase</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white mb-1">Frontend Development</h3>
+                    <p>JavaScript, TypeScript, Tailwind, Bootstrap, Blazor, Next.js, React, Vue.js, Angular, Svelte</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white mb-1">AI & Automation</h3>
+                    <p>AI Automation (n8n, zapier, make), AI Agents, AI Integration, AI Tools</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white mb-1">Business & Administrative</h3>
+                    <p>Data Entry, Data Analysis, Admin Assistant, Admin Tasks, Admin Support, Email Management, Skip Tracing, Lead Generation, Real Estate Assistant, Real Estate Admin, CRM</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white mb-1">Customer Service</h3>
+                    <p>Chat Support, Phone Support, Cold Calling, Customer Support</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white mb-1">Marketing</h3>
+                    <p>Social Media Marketing, Social Media Manager, Search Engine Optimization, Email Marketing, Creative Writing</p>
+                  </div>
+                  <div>
+                    <h3 className="text-white mb-1">Other Skills</h3>
+                    <p>Communication, Micro Services, Git, Scraping, Debugging</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -97,7 +116,13 @@ export default function CV() {
                 <h2 className="mb-3 sm:mb-3 md:mb-4 flex items-center gap-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-zinc-800">
                   <Code2 className="h-5 w-5 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-7 lg:w-7" /> Experience
                 </h2>
-                <div className="space-y-3 md:space-y-4">
+                <div className="space-y-2 md:space-y-3">
+                  <Experience
+                    title="FOUNDER"
+                    company="ROTO"
+                    date="2025"
+                    location="REMOTE"
+                  />
                   <Experience
                     title="FREELANCE DEVELOPER"
                     date="2024 - PRESENT"

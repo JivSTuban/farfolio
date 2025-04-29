@@ -2,6 +2,7 @@ import React from 'react';
 import { ScrollText } from 'lucide-react';
 
 const certifications = [
+    
     {
         title: "Foundational C# with Microsoft",
         company: "freeCodeCamp",
@@ -10,7 +11,7 @@ const certifications = [
     {
         title: "Java Object Oriented Programming Certification 2024",
         company: "Codechum",
-        url: "https://github.com/JivSTuban/farfolio/blob/main/public/certificates/TubanJiv-OOP-CertificationExam.pdf"
+        url: "https://github.com/JivSTuban/farfolio/blob/main/public/certificates/Tuban_OOP_CertificationExam"
     },
     {
         title: "Digital Skills: User Experience",
@@ -25,7 +26,17 @@ const certifications = [
     {
         title: "The Complete 2023 PHP Full Stack Web Developer Bootcamp",
         company: "Udemy",
-        url: "https://github.com/JivSTuban/farfolio/blob/main/public/certificates/PHP-cert.pdf"
+        url: "https://github.com/JivSTuban/farfolio/blob/main/public/certificates/Tuban_PHP_cert.pdf"
+    },
+    {
+        title: "Complete Guide to Web API in .NET 8: Master API Development",
+        company: "Udemy",
+        url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-c58b53d0-8d58-4548-8446-b773102b99f6.pdf"
+    },
+    {
+        title: "Angular - The Complete Guide (2025 Edition)",
+        company: "Udemy",
+        url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-a487006a-637e-4e7b-b781-8df5bbdf932a.pdf"
     },
 ];
 
