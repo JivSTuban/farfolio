@@ -36,7 +36,7 @@ const Experience = ({ title, company, date, location, certificateUrl, descriptio
         <ul className="mt-4 space-y-2 text-sm sm:text-base text-gray-600">
           {description.map((item, index) => (
             <li key={index} className="flex items-start">
-              <span className="mt-2 mr-3 w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0"></span>
+              <span className="mt-2.5 mr-3 w-1.5 h-1.5 bg-black-500 rounded-full flex-shrink-0"></span>
               <span className="leading-relaxed">{item}</span>
             </li>
           ))}

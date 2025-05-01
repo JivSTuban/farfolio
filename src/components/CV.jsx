@@ -1,6 +1,7 @@
 import { Briefcase, Code2, GraduationCap, Lightbulb, Mail, MapPin, Phone, Star, User, Monitor, Bike, ScrollText } from 'lucide-react'
 import Experience from './Experience'
 import Certifications from './Certifications'
+import { experiences } from '../constants'
 
 export default function CV() {
   return (
@@ -64,14 +65,7 @@ export default function CV() {
                   <Star className="h-4 w-4 sm:h-5 sm:w-5 md:h-5 md:w-5 lg:h-5 lg:w-5" /> Skills
                 </h2>
                 <div className="space-y-3 text-sm md:text-sm lg:text-sm text-zinc-400">
-                  <div>
-                    <h3 className="text-white mb-1">Backend Development</h3>
-                    <p>Spring Boot, Django, FastAPI, Flask, ASP.NET Core, Laravel, Supabase</p>
-                  </div>
-                  <div>
-                    <h3 className="text-white mb-1">Frontend Development</h3>
-                    <p>JavaScript, TypeScript, Tailwind, Bootstrap, Blazor, Next.js, React, Vue.js, Angular, Svelte</p>
-                  </div>
+                
                   <div>
                     <h3 className="text-white mb-1">AI & Automation</h3>
                     <p>AI Automation (n8n, zapier, make), AI Agents, AI Integration, AI Tools</p>
@@ -117,24 +111,17 @@ export default function CV() {
                   <Code2 className="h-5 w-5 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-7 lg:w-7" /> Experience
                 </h2>
                 <div className="space-y-2 md:space-y-3">
-                  <Experience
-                    title="FOUNDER"
-                    company="ROTO"
-                    date="2025"
-                    location="REMOTE"
-                  />
-                  <Experience
-                    title="FREELANCE DEVELOPER"
-                    date="2024 - PRESENT"
-                    location="REMOTE"
-                  />
-                  <Experience
-                    title="INTERNSHIP"
-                    company="JPMORGAN CHASE & CO"
-                    date="NOVEMBER 2024"
-                    location="REMOTE"
-                    certificateUrl="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_Ebhii2CfGr9wRxNEF_1731330290797_completion_certificate.pdf"
-                  />
+                  {experiences.map((experience, index) => (
+                    <Experience
+                      key={index}
+                      title={experience.title}
+                      company={experience.company}
+                      date={experience.date}
+                      location={experience.location}
+                      description={experience.description}
+                      certificateUrl={experience.title === "Internship" ? "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_Ebhii2CfGr9wRxNEF_1731330290797_completion_certificate.pdf" : undefined}
+                    />
+                  ))}
                 </div>
               </section>
 
@@ -215,35 +202,39 @@ export default function CV() {
               <Certifications/>
 
               <section>
-                <h2 className="mb-4 flex items-center gap-2 text-xl sm:text-2xl md:text-3xl font-bold text-zinc-800">
+                <h2 className="mb-6 flex items-center gap-2 text-xl sm:text-2xl md:text-3xl font-bold text-zinc-800">
                   <Monitor className="h-6 w-6 sm:h-7 sm:w-7" /> Tech Stack
                 </h2>
-                <ul className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm sm:text-base text-gray-600">
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                    ASP.NET CORE
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                    BLAZOR
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-red-500 rounded-full"></div>
-                    LARAVEL
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    DJANGO
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
-                    SPRING BOOT
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
-                    NEXT
-                  </li>
-                </ul>
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-lg font-semibold text-zinc-700 mb-3">Backend Technologies</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1.5 bg-blue-100 text-blue-800 rounded-lg font-medium">Spring Boot</span>
+                      <span className="px-3 py-1.5 bg-green-100 text-green-800 rounded-lg font-medium">Django</span>
+                      <span className="px-3 py-1.5 bg-purple-100 text-purple-800 rounded-lg font-medium">FastAPI</span>
+                      <span className="px-3 py-1.5 bg-yellow-100 text-yellow-800 rounded-lg font-medium">Flask</span>
+                      <span className="px-3 py-1.5 bg-indigo-100 text-indigo-800 rounded-lg font-medium">ASP.NET Core</span>
+                      <span className="px-3 py-1.5 bg-red-100 text-red-800 rounded-lg font-medium">Laravel</span>
+                      <span className="px-3 py-1.5 bg-emerald-100 text-emerald-800 rounded-lg font-medium">Supabase</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-zinc-700 mb-3">Frontend Technologies</h3>
+                    <div className="flex flex-wrap gap-2">
+                      <span className="px-3 py-1.5 bg-yellow-100 text-yellow-800 rounded-lg font-medium">JavaScript</span>
+                      <span className="px-3 py-1.5 bg-blue-100 text-blue-800 rounded-lg font-medium">TypeScript</span>
+                      <span className="px-3 py-1.5 bg-cyan-100 text-cyan-800 rounded-lg font-medium">Tailwind</span>
+                      <span className="px-3 py-1.5 bg-purple-100 text-purple-800 rounded-lg font-medium">Bootstrap</span>
+                      <span className="px-3 py-1.5 bg-indigo-100 text-indigo-800 rounded-lg font-medium">Blazor</span>
+                      <span className="px-3 py-1.5 bg-black text-white rounded-lg font-medium">Next.js</span>
+                      <span className="px-3 py-1.5 bg-blue-100 text-blue-800 rounded-lg font-medium">React</span>
+                      <span className="px-3 py-1.5 bg-green-100 text-green-800 rounded-lg font-medium">Vue.js</span>
+                      <span className="px-3 py-1.5 bg-red-100 text-red-800 rounded-lg font-medium">Angular</span>
+                      <span className="px-3 py-1.5 bg-orange-100 text-orange-800 rounded-lg font-medium">Svelte</span>
+                    </div>
+                  </div>
+                 
+                </div>
               </section>
             </div>
           </div>

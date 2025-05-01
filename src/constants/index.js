@@ -243,3 +243,40 @@ export const navLinks = [
       lazerPosition: isSmall ? [6, -6, 0] : isMobile ? [6.5, -4.5, 0] : isTablet ? [9, -5.5, 0] : [10, -7, 0],
     };
   };
+
+export const experiences = [
+  {
+    title: "Founder",
+    company: "Roto",
+    date: "2025",
+    location: "Remote",
+    description: [
+      "Founded and developed a business automation platform helping companies run on autopilot",
+      "Created AI-powered solutions for lead generation, skip tracing, and lead conversion",
+      "Developed systems enabling businesses to focus on closing deals while automating tedious tasks",
+    ]
+  },
+  {
+    title: "Freelance Developer",
+    company: "Various Clients",
+    date: "2024 - Present",
+    location: "Remote",
+    description: [
+      "Develop custom web solutions for various clients using modern tech stacks",
+      "Create responsive, user-friendly interfaces with React/Next.js and CSS frameworks",
+      "Build robust backend systems with Django, Supabase, Spring Boot, and ASP.NET Core",
+      "Implement AI-powered solutions for business automation and optimization"
+    ]
+  },
+  {
+    title: "Internship",
+    company: "JPMorgan Chase & Co",
+    date: "November 2024",
+    location: "Remote",
+    description: [
+      "Gained experience working with enterprise-level software development systems",
+      "Collaborated with professional development teams on financial technology applications",
+      "Applied software engineering principles within a regulated financial environment"
+    ]
+  }
+];
