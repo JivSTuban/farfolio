@@ -187,6 +187,34 @@ export default function CV() {
                       </a>
                     </div>
                   </div>
+
+                  <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
+                    <div className="flex-grow">
+                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-2">
+                        Keilah's Cakes and Pastries
+                      </h3>
+                      <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-2 leading-relaxed">
+                        A comprehensive e-commerce platform for Keilah's Cakes and Pastries featuring an extensive product catalog with wedding cakes, birthday cakes, baby dedication cakes, number cakes, classic chiffon cakes, and customized tier cakes. The site includes detailed product collections, pricing information, and a complete celebration package system for streamlined ordering.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        <span className="px-3 py-1 text-xs font-medium bg-black text-white rounded-full">Next.js</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-cyan-100 text-cyan-800 rounded-full">Tailwind</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">TypeScript</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-emerald-100 text-emerald-800 rounded-full">Supabase</span>
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                      <a 
+                        href="https://keilahs.shop"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+                      >
+                        <Monitor className="h-5 w-5" />
+                        Live Site
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </section>
 
