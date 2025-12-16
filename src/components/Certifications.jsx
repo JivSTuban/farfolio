@@ -2,7 +2,16 @@ import React from 'react';
 import { ScrollText } from 'lucide-react';
 
 const certifications = [
-    
+    {
+        title: "AWS Academy Graduate - Cloud Architecting",
+        company: "AWS Academy",
+        url: "https://www.credly.com/badges/6083d1f9-dc58-4b00-862b-1aa30d1776d6/public_url"
+    },
+    {
+        title: "AWS Academy Graduate - Cloud Foundations",
+        company: "AWS Academy",
+        url: "https://www.credly.com/badges/1ea99f04-5769-4b9a-b8c2-a1561d48a3f9/linked_in_profile"
+    },
     {
         title: "Foundational C# with Microsoft",
         company: "freeCodeCamp",

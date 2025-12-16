@@ -246,37 +246,41 @@ export const navLinks = [
 
 export const experiences = [
   {
+    title: "Junior Software Developer",
+    company: "Freckles Graphics, Inc.",
+    date: "August 2025 - Present",
+    location: "Lafayette, Indiana, United States · Remote",
+    logo: "/assets/frecklesgraphics_logo.jpeg",
+    description: [
+      "Architected automated production workflow system for Polaris DTG printers processing 500+ daily orders, integrating ShopWorks API with AI-powered artwork processing (WaveSpeed AI), intelligent image sizing, and QR code generation, reducing manual processing time by 85% for $12,000,000+ annual revenue operation",
+      "Developed comprehensive AI image generation studio using Next.js and TypeScript, enabling designers to create 1K-4K resolution artwork with text-to-image generation, multi-reference composition (10 images), and style presets, achieving <30 second generation times and 95%+ success rates",
+      "Built sample order management system with Python/Flask backend and Supabase database, featuring automated artwork processing, multi-location print support (5 positions), intelligent image processing pipeline with auto-crop detection, transparent border removal, and white pixel identification for Polaris printer compatibility",
+      "Collaborated with senior engineer on launcheforce.com CRM platform to develop AI-powered conversational data assistant using RAG architecture, enabling sales reps and remote workers to query order status and processing data through natural language, democratizing data access across distributed teams"
+    ]
+  },
+  {
+    title: "AI Automation Developer",
+    company: "Cinematography for Actors (CFA Institute)",
+    date: "July 2025 - Present",
+    location: "Los Angeles, California (Remote, Part-Time)",
+    logo: "/assets/cinematographyforactors_logo.jpeg",
+    description: [
+      "Architected and deployed AI-powered email automation system using Google Cloud Run, reducing response time by 70% and enabling contextualized replies from 500+ company documents including SOPs and FAQs",
+      "Developed CastDash platform serving 800+ filmmakers with automated job matching algorithm (0-100 scoring), processing roles from 3 major casting platforms in real-time using Next.js and Supabase (Postgres), including Playwright-based submission automation system with twice-daily notification pipeline (11am/6pm PST) streamlining application processes across 17 countries",
+      "Implemented end-to-end content publishing automation from Ghost CMS to Substack, eliminating 100% of manual publishing workflows and enabling seamless multi-platform content distribution",
+      "Managed comprehensive Google Cloud infrastructure including Cloud Run deployments, Pub/Sub queuing, Secret Manager security, and Cloud Storage, supporting production-grade automation services"
+    ]
+  },
+  {
     title: "Founder",
     company: "Roto",
-    date: "2025",
+    date: "January 2025 - July 2025",
     location: "Remote",
     description: [
-      "Founded and developed a business automation platform helping companies run on autopilot",
-      "Created AI-powered solutions for lead generation, skip tracing, and lead conversion",
-      "Developed systems enabling businesses to focus on closing deals while automating tedious tasks",
-    ]
-  },
-  {
-    title: "Freelance Developer",
-    company: "Various Clients",
-    date: "2024 - Present",
-    location: "Remote",
-    description: [
-      "Develop custom web solutions for various clients using modern tech stacks",
-      "Create responsive, user-friendly interfaces with React/Next.js and CSS frameworks",
-      "Build robust backend systems with Django, Supabase, Spring Boot, and ASP.NET Core",
-      "Implement AI-powered solutions for business automation and optimization"
-    ]
-  },
-  {
-    title: "Internship",
-    company: "JPMorgan Chase & Co",
-    date: "November 2024",
-    location: "Remote",
-    description: [
-      "Gained experience working with enterprise-level software development systems",
-      "Collaborated with professional development teams on financial technology applications",
-      "Applied software engineering principles within a regulated financial environment"
+      "Founded Roto, developing multi-client business automation platform using Python and cloud infrastructure, serving real estate and lead generation industries with custom workflow solutions",
+      "Built skip tracing and lead generation automation system processing 10,000+ records weekly, achieving 85% automation rate and saving clients 20+ hours weekly through API integrations with data providers",
+      "Architected scalable automation workflows using n8n, Zapier, and custom APIs, reducing manual task processing by 65% and improving deal close rates by 40% for real estate investor clients",
+      "Developed ROI-focused business process automation delivering 70% operational efficiency gains through systematic workflow optimization and client-specific automation strategies",
     ]
   }
 ];
