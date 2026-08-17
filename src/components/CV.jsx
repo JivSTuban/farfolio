@@ -20,7 +20,7 @@ export default function CV() {
               </div>
               <h1 className="mb-1 sm:mb-2 text-xl sm:text-2xl md:text-3xl lg:text-3xl font-bold tracking-wider">JIV TUBAN</h1>
               <p className="text-sm text-zinc-400">
-                Full Stack Software Developer | FOUNDER
+                AI Engineer | Technical Lead | Full-Stack Developer
               </p>
             </div>
 
@@ -115,7 +115,7 @@ export default function CV() {
                   <User className="h-5 w-5 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-7 lg:w-7" /> About Me
                 </h2>
                 <p className="text-sm md:text-sm lg:text-base text-gray-600 leading-relaxed">
-                  Full stack web developer and founder focused on intuitive user experiences and dependable backend systems. Leverages automation and Artificial Intelligence to streamline workflows and deliver maintainable, high-quality software.
+                  Full-stack developer specializing in AI automation, RAG systems, workflow orchestration, SaaS dashboards, and production integrations. I build multi-tenant AI infrastructure, lead automation systems, and cloud workflows across startup, agency, dealership, medspa, print production, and education operations.
                 </p>
               </section>
 
@@ -143,7 +143,7 @@ export default function CV() {
                 <h2 className="mb-3 sm:mb-3 md:mb-4 flex items-center gap-2 text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-zinc-800">
                   <Lightbulb className="h-5 w-5 sm:h-6 sm:w-6 md:h-6 md:w-6 lg:h-7 lg:w-7" /> Featured Work
                 </h2>
-                <div className="grid grid-cols-1 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
                     <div className="flex-grow">
                       <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-2">
@@ -189,7 +189,7 @@ export default function CV() {
                       </div>
                     </div>
                     <div className="mt-4">
-                      <a 
+                      <a
                         href="https://keilahs.shop"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -197,6 +197,118 @@ export default function CV() {
                       >
                         <Monitor className="h-5 w-5" />
                         Live Site
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
+                    <div className="flex-grow">
+                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-2">
+                        RAG Knowledge Base Packages
+                      </h3>
+                      <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-2 leading-relaxed">
+                        Built reusable Ayahay packages for RAG-powered AI agents: a TypeScript SDK for document ingestion, vector search, retrieval, streaming responses, and live-data tools, plus a whitelabel React chat widget for tenant-facing chatbot experiences. Backed by OpenAI embeddings and PostgreSQL pgvector.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        <span className="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">TypeScript</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-cyan-100 text-cyan-800 rounded-full">React</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-emerald-100 text-emerald-800 rounded-full">OpenAI</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full">pgvector</span>
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                      <a
+                        href="https://github.com/JivSTuban/knowledge-base-sdk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-zinc-900 rounded-lg hover:bg-zinc-800 transition-colors"
+                      >
+                        <Github className="h-5 w-5" />
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
+                    <div className="flex-grow">
+                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-2">
+                        OJTech OJT Platform
+                      </h3>
+                      <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-2 leading-relaxed">
+                        Built a multi-role training platform for students, employers, Network Liaison Officers, and admins — onboarding, opportunity posting, applications, profile verification, application history, and AI-generated CVs and cover letters. Powered by a Spring Boot REST API with role-based workflows.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        <span className="px-3 py-1 text-xs font-medium bg-cyan-100 text-cyan-800 rounded-full">React (Vite)</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full">Spring Boot</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-purple-100 text-purple-800 rounded-full">REST APIs</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-emerald-100 text-emerald-800 rounded-full">AI Docs</span>
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                      <a
+                        href="https://github.com/JivSTuban/OJTech"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-zinc-900 rounded-lg hover:bg-zinc-800 transition-colors"
+                      >
+                        <Github className="h-5 w-5" />
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
+                    <div className="flex-grow">
+                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-2">
+                        LinkedIn Growth Automation
+                      </h3>
+                      <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-2 leading-relaxed">
+                        Built a self-driving LinkedIn growth agent: a scheduled pm2 cron job runs a custom Claude Code skill each morning that authenticates a persistent Chrome session, sends ~15 targeted connection requests, follows relevant accounts, and leaves substantive comments on fresh AI/tech posts — with rate limits baked in to stay within safe thresholds.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        <span className="px-3 py-1 text-xs font-medium bg-orange-100 text-orange-800 rounded-full">Claude Code</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-emerald-100 text-emerald-800 rounded-full">Playwright MCP</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full">Node.js</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">pm2</span>
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                      <a
+                        href="https://github.com/JivSTuban/claude-inlinkedin"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-zinc-900 rounded-lg hover:bg-zinc-800 transition-colors"
+                      >
+                        <Github className="h-5 w-5" />
+                        GitHub
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg hover:shadow-md transition-shadow flex flex-col h-full">
+                    <div className="flex-grow">
+                      <h3 className="text-base sm:text-lg md:text-lg lg:text-xl font-semibold text-zinc-900 flex items-center gap-2">
+                        InvestaBot Trading Signals
+                      </h3>
+                      <p className="text-sm md:text-sm lg:text-base text-gray-600 mt-2 leading-relaxed">
+                        Built a Discord trading-signal bot combining technical analysis (RSI, MACD crossovers, ATR-based targets, 200-day EMA) with Perplexity AI news sentiment to score US stock, crypto, and options signals. Runs scheduled pre-market and 4-hour scans, suppresses low-confidence or negative-sentiment signals, and logs outcomes to track hit rate by signal type.
+                      </p>
+                      <div className="flex flex-wrap gap-2 mt-3">
+                        <span className="px-3 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full">Python</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-indigo-100 text-indigo-800 rounded-full">Discord.py</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-blue-100 text-blue-800 rounded-full">Polygon.io</span>
+                        <span className="px-3 py-1 text-xs font-medium bg-purple-100 text-purple-800 rounded-full">Perplexity AI</span>
+                      </div>
+                    </div>
+                    <div className="mt-4">
+                      <a
+                        href="https://github.com/JivSTuban/investabot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-zinc-900 rounded-lg hover:bg-zinc-800 transition-colors"
+                      >
+                        <Github className="h-5 w-5" />
+                        GitHub
                       </a>
                     </div>
                   </div>
@@ -228,7 +340,7 @@ export default function CV() {
                 </h2>
                 <h3 className="text-base sm:text-lg font-semibold">Bachelor of Science in Information Technology</h3>
                 <p className="mt-1 text-sm sm:text-base text-gray-600">Cebu Institute of Technology - University</p>
-                <p className="mt-1 text-sm sm:text-base text-gray-600">July 2022 - May 2026 (Expected) Cebu, Philippines</p>
+                <p className="mt-1 text-sm sm:text-base text-gray-600">July 2022 - May 2026 · Cebu, Philippines</p>
               </section>
 
               <Certifications/>
