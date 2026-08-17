@@ -246,41 +246,60 @@ export const navLinks = [
 
 export const experiences = [
   {
-    title: "Junior Software Developer",
+    title: "AI Engineer",
+    company: "Traciety",
+    date: "April 2026 - Present",
+    location: "New York, NY, United States · Remote",
+    description: [
+      "Built internal image-ad and video-ad generation surfaces in the production dashboard, connecting template inputs, queue flows, client-scoped generation pages, and API routes across static image and HeyGen video pipelines",
+      "Systematized AI creative generation from a historical library of 300+ prior ads, converting proven hooks, offers, prompts, and visual patterns into reusable medspa ad templates",
+      "Owned technical operations across 28 active client sub-accounts, 18 n8n workflows, and 6+ data systems including GoHighLevel, Supabase, Slack, Notion, Google Sheets, and DigitalOcean"
+    ]
+  },
+  {
+    title: "Technical Lead",
+    company: "Crowdsnare AI",
+    date: "December 2025 - June 2026",
+    location: "Houston, TX, United States · Remote",
+    description: [
+      "Managed end-to-end development for 6 AI agent products while serving as the technical point of contact for clients, leadership, and junior teammates",
+      "Architected production lead automation using n8n and GoHighLevel, reducing lead processing from manual hours to seconds with OpenAI, Supabase, MCP-enabled tooling, and webhook routing",
+      "Restored critical production workflows by debugging logic-path routing issues, standardizing payload handling, and adding retry patterns to keep lead ingestion reliable"
+    ]
+  },
+  {
+    title: "Software Engineer Intern",
+    company: "Ayahay",
+    date: "January 2026 - May 2026",
+    location: "Cebu, Philippines · Remote",
+    description: [
+      "Architected and deployed multi-tenant RAG chatbot infrastructure for Ayahai v2, shipping a backend knowledge-base SDK and a React chat UI library for reusable tenant integrations",
+      "Refactored chatbot services into NestJS microservices, reducing response latency by ~40% and improving retrieval recall by ~57% through similarity-threshold tuning and prompt optimization",
+      "Contributed to Next.js and NestJS maritime booking systems, centralizing business logic in an API gateway and optimizing PostgreSQL route/schedule lookups for sub-second latency"
+    ]
+  },
+  {
+    title: "Full-stack Developer",
     company: "Freckles Graphics, Inc.",
-    date: "August 2025 - Present",
+    date: "August 2025 - April 2026",
     location: "Lafayette, Indiana, United States · Remote",
     logo: "/assets/frecklesgraphics_logo.jpeg",
     description: [
-      "Architected automated production workflow system for Polaris DTG printers processing 500+ daily orders, integrating ShopWorks API with AI-powered artwork processing (WaveSpeed AI), intelligent image sizing, and QR code generation, reducing manual processing time by 85% for $12,000,000+ annual revenue operation",
-      "Developed comprehensive AI image generation studio using Next.js and TypeScript, enabling designers to create 1K-4K resolution artwork with text-to-image generation, multi-reference composition (10 images), and style presets, achieving <30 second generation times and 95%+ success rates",
-      "Built sample order management system with Python/Flask backend and Supabase database, featuring automated artwork processing, multi-location print support (5 positions), intelligent image processing pipeline with auto-crop detection, transparent border removal, and white pixel identification for Polaris printer compatibility",
-      "Collaborated with senior engineer on launcheforce.com CRM platform to develop AI-powered conversational data assistant using RAG architecture, enabling sales reps and remote workers to query order status and processing data through natural language, democratizing data access across distributed teams"
+      "Architected an automated production workflow for Polaris DTG printers processing 500+ daily orders, integrating ShopWorks API, WaveSpeed AI, QR generation, and intelligent artwork sizing to reduce manual processing time by 85% for a $12M+ annual operation",
+      "Built a Next.js/TypeScript AI image generation studio enabling designers to create 1K-4K artwork with text-to-image generation, 10-image reference composition, style presets, sub-30-second generation, and 95%+ success rates",
+      "Built Python/Flask and Supabase order tooling for 5 print locations with auto-crop, transparent-border removal, white-pixel detection, and a RAG-powered eFORCE CRM assistant"
     ]
   },
   {
     title: "AI Automation Developer",
-    company: "Cinematography for Actors (CFA Institute)",
-    date: "July 2025 - Present",
-    location: "Los Angeles, California (Remote, Part-Time)",
+    company: "Cinematography for Actors Institute",
+    date: "July 2025 - January 2026",
+    location: "Los Angeles, California, United States · Remote",
     logo: "/assets/cinematographyforactors_logo.jpeg",
     description: [
-      "Architected and deployed AI-powered email automation system using Google Cloud Run, reducing response time by 70% and enabling contextualized replies from 500+ company documents including SOPs and FAQs",
-      "Developed CastDash platform serving 800+ filmmakers with automated job matching algorithm (0-100 scoring), processing roles from 3 major casting platforms in real-time using Next.js and Supabase (Postgres), including Playwright-based submission automation system with twice-daily notification pipeline (11am/6pm PST) streamlining application processes across 17 countries",
-      "Implemented end-to-end content publishing automation from Ghost CMS to Substack, eliminating 100% of manual publishing workflows and enabling seamless multi-platform content distribution",
-      "Managed comprehensive Google Cloud infrastructure including Cloud Run deployments, Pub/Sub queuing, Secret Manager security, and Cloud Storage, supporting production-grade automation services"
-    ]
-  },
-  {
-    title: "Founder",
-    company: "Roto",
-    date: "January 2025 - July 2025",
-    location: "Remote",
-    description: [
-      "Founded Roto, developing multi-client business automation platform using Python and cloud infrastructure, serving real estate and lead generation industries with custom workflow solutions",
-      "Built skip tracing and lead generation automation system processing 10,000+ records weekly, achieving 85% automation rate and saving clients 20+ hours weekly through API integrations with data providers",
-      "Architected scalable automation workflows using n8n, Zapier, and custom APIs, reducing manual task processing by 65% and improving deal close rates by 40% for real estate investor clients",
-      "Developed ROI-focused business process automation delivering 70% operational efficiency gains through systematic workflow optimization and client-specific automation strategies",
+      "Architected and deployed AI-powered email automation on Google Cloud Run, reducing response time by 70% with contextual replies grounded in 50+ SOPs, FAQs, and internal company documents",
+      "Built grant information request automation using Cloud Run, Node.js, and Google Drive integrations, eliminating manual notification workflows and enabling document-aware responses with attachments",
+      "Managed Google Cloud infrastructure across Cloud Run, Pub/Sub, Secret Manager, and Cloud Storage while optimizing Ghost CMS mobile Lighthouse performance from 45 to 85+"
     ]
   }
 ];
