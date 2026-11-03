@@ -1,5 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  // Tailwind's hover: variants only apply where the device can really hover, so a tap on a phone does not leave a hover style stuck.
+  future: { hoverOnlyWhenSupported: true },
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {

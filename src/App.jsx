@@ -5,6 +5,7 @@ import { createChat } from '@n8n/chat';
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
+import WorkExperience from "./sections/WorkExperience";
 import Projects from "./sections/Projects";
 import { navLinks } from './constants';
 import Contact from './sections/Contact';
@@ -21,6 +22,11 @@ function App() {
 
     const handleKeyDown = (event) => {
       if (isScrolling) return;
+      // Arrow keys must keep working inside the contact form, and while the CV dialog
+      // is open (it locks body scroll); otherwise they scroll the page behind it.
+      const el = event.target;
+      if (el instanceof HTMLElement && (el.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(el.tagName))) return;
+      if (document.body.style.overflow === 'hidden') return;
 
       if (event.key === 'ArrowDown') {
         // Scroll down
@@ -65,8 +71,11 @@ function App() {
       <Element name="home" className='min-h-screen w-full flex flex-col relative'>
         <Hero />
       </Element>
-      <Element name="about" className="c-space my-20">
+      <Element name="about" className="c-space my-20 overflow-x-clip">
         <About />
+      </Element>
+      <Element name="experience" className="my-20">
+        <WorkExperience />
       </Element>
       <Element name="work" className="c-space my-40">
         <Projects />
