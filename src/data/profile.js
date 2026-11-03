@@ -13,15 +13,6 @@ export const person = {
     'I build AI automation and multi-tenant RAG systems that run in production: lead routing, ad generation, reporting pipelines and the integrations between them.',
 };
 
-// Numbers that carry the pitch. `of` names where the figure comes from so it can be checked.
-export const proof = [
-  { value: '97.0%', label: 'Slack booking attribution, up from 54.3%', of: 'Traciety' },
-  { value: '166', label: 'merged pull requests, 62% of the dashboard repo', of: 'Traciety' },
-  { value: '500+', label: 'daily print orders automated, 85% less manual time', of: 'Freckles Graphics' },
-  { value: '377', label: 'passing tests on a job-application engine used by 11 people', of: 'AutoApply' },
-  { value: 'Top prize', label: 'among 196 teams at the GCash ImaGnation hackathon', of: 'GAssure' },
-];
-
 // Newest first. `stops` feeds the route-board lettering (place names, not job duties).
 export const experience = [
   {
@@ -159,20 +150,6 @@ export const award = {
     'Architected a trustless escrow flow with immutable audit trails, real-time balance tracking, and multi-party transaction handling.',
   ],
 };
-
-// The 3D "Work" showcase: the resume's projects plus the hackathon win, in one list.
-export const showcase = [
-  ...projects,
-  {
-    name: 'GAssure',
-    tagline: `${award.title}, ${award.team}`,
-    when: award.when,
-    icon: 'shield',
-    screen: { value: 'Top prize', label: 'among 196 teams', lines: ['trustless escrow', 'immutable audit trail', 'real-time balances'] },
-    stack: award.stack,
-    bullets: award.bullets,
-  },
-];
 
 // Live or public work that is not on the resume, kept to one line each for the CV modal.
 export const alsoShipped = [

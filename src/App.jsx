@@ -5,7 +5,6 @@ import { createChat } from '@n8n/chat';
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
-import WorkExperience from "./sections/WorkExperience";
 import Projects from "./sections/Projects";
 import { navLinks } from './constants';
 import Contact from './sections/Contact';
@@ -73,9 +72,6 @@ function App() {
       </Element>
       <Element name="about" className="c-space my-20 overflow-x-clip">
         <About />
-      </Element>
-      <Element name="experience" className="my-20">
-        <WorkExperience />
       </Element>
       <Element name="work" className="c-space my-40">
         <Projects />
