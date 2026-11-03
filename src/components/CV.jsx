@@ -7,7 +7,7 @@ export default function CV() {
   return (
     <div className="text-gray-800 min-h-screen bg-gray-100">
       <div className="w-full max-w-full sm:max-w-3xl md:max-w-4xl lg:max-w-[1600px] xl:max-w-[1600px] 2xl:max-w-[1600px]">
-        <div className="grid gap-4 sm:gap-6 grid-cols-[25%_75%] shadow-lg rounded-lg overflow-hidden">
+        <div className="grid gap-4 sm:gap-6 grid-cols-1 md:grid-cols-[25%_minmax(0,1fr)] shadow-lg rounded-lg overflow-hidden">
           {/* Sidebar */}
           <div className="bg-zinc-900 p-4 sm:p-5 md:p-6 text-white">
             <div className="mb-6 sm:mb-6 md:mb-8 text-center">
