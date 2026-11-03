@@ -3,6 +3,10 @@ import { ScrollText } from 'lucide-react';
 
 const certifications = [
     {
+        title: "Claude Code in Action, Building with the Claude API, Model Context Protocol (Intro and Advanced), Agent Skills, Subagents (18 certificates, Jun 2026)",
+        company: "Anthropic Academy",
+    },
+    {
         title: "AWS Academy Graduate - Cloud Architecting",
         company: "AWS Academy",
         url: "https://www.credly.com/badges/6083d1f9-dc58-4b00-862b-1aa30d1776d6/public_url"
@@ -57,9 +61,13 @@ const Certifications = () => (
     <ul className="list-inside list-disc space-y-2 text-sm sm:text-base text-gray-600">
       {certifications.map((cert, index) => (
         <li key={index}>
-          <a href={cert.url} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-            {cert.title}
-          </a> - {cert.company}
+          {cert.url ? (
+            <a href={cert.url} target="_blank" rel="noopener noreferrer" className="text-blue-700 underline">
+              {cert.title}
+            </a>
+          ) : (
+            cert.title
+          )} - {cert.company}
         </li>
       ))}
     </ul>

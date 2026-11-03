@@ -8,6 +8,12 @@
   scroll-behavior: smooth;
 }
 
+/* Keyboard users need to see where focus is; the template removed every outline. */
+:focus-visible {
+  outline: 2px solid #D5D8EA;
+  outline-offset: 2px;
+}
+
 body {
   background: #010103;
   font-family: 'General Sans', sans-serif;
@@ -35,7 +41,7 @@ body {
   }
 
   .nav-sidebar {
-    @apply absolute left-0 right-0 bg-black-200 backdrop-blur-sm transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
+    @apply absolute left-0 right-0 bg-black-200 transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto sm:hidden block;
   }
 
   .text-gray_gradient {
@@ -44,7 +50,7 @@ body {
 
   /* button component */
   .btn {
-    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300  transition-all active:scale-95 text-white mx-auto;
+    @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-black-300 transition-transform duration-150 ease-out active:scale-95 text-white mx-auto;
   }
 
   .btn-ping {
@@ -70,12 +76,12 @@ body {
   }
 
   .copy-container {
-    @apply cursor-pointer flex justify-center items-center gap-2;
+    @apply cursor-pointer flex justify-center items-center gap-2 active:scale-[0.98] transition-transform duration-150;
   }
 
   /* projects section  */
   .arrow-btn {
-    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full arrow-gradient;
+    @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-transform duration-150 ease-out rounded-full arrow-gradient;
   }
 
   .tech-logo {
@@ -109,7 +115,7 @@ body {
   }
 
   .work-content_container {
-    @apply grid grid-cols-[auto_1fr] items-start gap-5  transition-all ease-in-out duration-500 cursor-pointer hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
+    @apply grid grid-cols-[auto_1fr] items-start gap-5 transition-colors ease-out duration-200 hover:bg-black-300 rounded-lg sm:px-5 px-2.5;
   }
 
   .work-content_logo {
@@ -377,5 +383,17 @@ body {
   }
   100% {
     transform: rotate(0deg);
+  }
+}
+
+/* Reduced motion: stop the looping decorations and the smooth-scroll glide.
+   Kept at the END of the file: `.waving-hand` sets its animation above, and equal specificity means the later rule wins. */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto;
+  }
+  .waving-hand,
+  .btn-ping {
+    animation: none;
   }
 }
