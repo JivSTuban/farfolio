@@ -250,6 +250,7 @@ export const experiences = [
     company: "Traciety",
     date: "April 2026 - Present",
     location: "New York, NY, United States · Remote",
+    logo: "/assets/traciety_logo.jpeg",
     description: [
       "Built internal image-ad and video-ad generation surfaces in the production dashboard, connecting template inputs, queue flows, client-scoped generation pages, and API routes across static image and HeyGen video pipelines",
       "Systematized AI creative generation from a historical library of 300+ prior ads, converting proven hooks, offers, prompts, and visual patterns into reusable medspa ad templates",
@@ -261,6 +262,7 @@ export const experiences = [
     company: "Crowdsnare AI",
     date: "December 2025 - June 2026",
     location: "Houston, TX, United States · Remote",
+    logo: "/assets/crowdsnare_logo.jpeg",
     description: [
       "Managed end-to-end development for 6 AI agent products while serving as the technical point of contact for clients, leadership, and junior teammates",
       "Architected production lead automation using n8n and GoHighLevel, reducing lead processing from manual hours to seconds with OpenAI, Supabase, MCP-enabled tooling, and webhook routing",
@@ -272,6 +274,7 @@ export const experiences = [
     company: "Ayahay",
     date: "January 2026 - May 2026",
     location: "Cebu, Philippines · Remote",
+    logo: "/assets/ayahay_logo.jpeg",
     description: [
       "Architected and deployed multi-tenant RAG chatbot infrastructure for Ayahai v2, shipping a backend knowledge-base SDK and a React chat UI library for reusable tenant integrations",
       "Refactored chatbot services into NestJS microservices, reducing response latency by ~40% and improving retrieval recall by ~57% through similarity-threshold tuning and prompt optimization",

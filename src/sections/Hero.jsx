@@ -55,7 +55,7 @@ const Hero = () => {
       {alert.show && <Alert {...alert} />}
       {showCV && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50 p-4">
-          <div className="relative h-[95vh] w-[95%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[50%] max-w-6xl shadow-3xl overflow-hidden rounded-2xl">
+          <div className="relative h-[95vh] w-[95%] sm:w-[92%] md:w-[90%] lg:w-[88%] xl:w-[85%] max-w-[1500px] shadow-3xl overflow-hidden rounded-2xl">
             <button
               onClick={handleCloseCV}
               className="absolute right-2 top-2 sm:right-3 sm:top-3 md:right-4 md:top-4 z-10 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center rounded-full bg-gray-200 hover:bg-gray-300 transition-colors"
