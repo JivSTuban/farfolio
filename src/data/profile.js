@@ -19,7 +19,7 @@ export const proof = [
   { value: '166', label: 'merged pull requests, 62% of the dashboard repo', of: 'Traciety' },
   { value: '500+', label: 'daily print orders automated, 85% less manual time', of: 'Freckles Graphics' },
   { value: '377', label: 'passing tests on a job-application engine used by 11 people', of: 'AutoApply' },
-  { value: '1st', label: 'of 196 teams at the GCash ImaGnation hackathon', of: 'GAssure' },
+  { value: 'Top prize', label: 'among 196 teams at the GCash ImaGnation hackathon', of: 'GAssure' },
 ];
 
 // Newest first. `stops` feeds the route-board lettering (place names, not job duties).
@@ -168,7 +168,7 @@ export const showcase = [
     tagline: `${award.title}, ${award.team}`,
     when: award.when,
     icon: 'shield',
-    screen: { value: '1st', label: 'of 196 teams', lines: ['trustless escrow', 'immutable audit trail', 'real-time balances'] },
+    screen: { value: 'Top prize', label: 'among 196 teams', lines: ['trustless escrow', 'immutable audit trail', 'real-time balances'] },
     stack: award.stack,
     bullets: award.bullets,
   },

@@ -33,8 +33,16 @@ export function drawProjectScreen(project) {
   // the number
   g.fillStyle = '#FFFFFF';
   g.textBaseline = 'alphabetic';
-  g.font = `600 220px ${sans}`;
-  g.fillText(value, 56, 300);
+  // shrink long values (e.g. "Top prize") until they fit inside the screen margins
+  let size = 220;
+  g.font = `600 ${size}px ${sans}`;
+  while (g.measureText(value).width > W - 112 && size > 60) {
+    size -= 4;
+    g.font = `600 ${size}px ${sans}`;
+  }
+  // lift the baseline by the descender ("p" in "Top prize") so it clears the label below
+  const baseline = Math.min(300, 325 - g.measureText(value).actualBoundingBoxDescent);
+  g.fillText(value, 56, baseline);
   g.fillStyle = '#AFB0B6';
   g.font = `46px ${sans}`;
   g.fillText(label, 60, 365);
