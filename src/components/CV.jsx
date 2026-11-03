@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { Briefcase, Code2, GraduationCap, Lightbulb, Mail, MapPin, Phone, Star, User, Bike, Linkedin, Github, Globe, Trophy } from 'lucide-react'
+import { Briefcase, Code2, GraduationCap, Mail, MapPin, Phone, Star, User, Bike, Linkedin, Github, Globe, Trophy } from 'lucide-react'
 import Experience from './Experience'
 import Certifications from './Certifications'
-import { person, experience, projects, award, education, skills } from '../data/profile'
+import { person, experience, award, education, skills } from '../data/profile'
 
 const heading = 'mb-3 md:mb-4 flex items-center gap-2 text-xl md:text-2xl lg:text-3xl font-bold text-zinc-800'
 const icon = 'h-5 w-5 md:h-6 md:w-6 lg:h-7 lg:w-7'
@@ -120,25 +120,6 @@ export default function CV() {
                       description={job.bullets}
                       logo={job.logo}
                     />
-                  ))}
-                </div>
-              </section>
-
-              <section>
-                <h2 className={heading}><Lightbulb className={icon} aria-hidden="true" /> Selected Projects</h2>
-                <div className="space-y-4">
-                  {projects.map((p) => (
-                    <div key={p.name} className="bg-gray-50 p-4 sm:p-5 md:p-6 rounded-lg border border-gray-100">
-                      <div className="flex flex-wrap items-baseline justify-between gap-x-4">
-                        <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-zinc-900">
-                          {p.href ? <a href={p.href} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition-colors">{p.name}</a> : p.name}
-                        </h3>
-                        <span className="text-sm text-zinc-500">{p.when}</span>
-                      </div>
-                      <p className="text-sm text-zinc-600">{p.tagline}</p>
-                      <StackTags items={p.stack} />
-                      <Bullets items={p.bullets} />
-                    </div>
                   ))}
                 </div>
               </section>

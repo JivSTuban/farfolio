@@ -1,0 +1,326 @@
+- main [ref=f3e3]:
+  - generic [ref=f3e6]:
+    - link "Jiv Tuban" [ref=f3e8] [cursor=pointer]:
+      - /url: https://github.com/JivSTuban
+    - navigation "Primary" [ref=f3e9]:
+      - list [ref=f3e10]:
+        - listitem [ref=f3e11]: Home
+        - listitem [ref=f3e12]: About
+        - listitem [ref=f3e13]: Work
+        - listitem [ref=f3e14]: Contact
+  - generic [ref=f3e15]:
+    - dialog "Curriculum vitae" [ref=f3e179]:
+      - button "Close CV" [active] [ref=f3e180] [cursor=pointer]
+      - generic [ref=f3e187]:
+        - generic [ref=f3e188]:
+          - generic [ref=f3e189]:
+            - img "Jiv Tuban" [ref=f3e191]
+            - heading "JIV TUBAN" [level=1] [ref=f3e192]
+            - paragraph [ref=f3e193]: AI Engineer | Technical Lead | Full-Stack Developer
+          - generic [ref=f3e194]:
+            - generic [ref=f3e195]:
+              - heading "Contact" [level=2] [ref=f3e196]
+              - generic [ref=f3e200]:
+                - paragraph [ref=f3e201]:
+                  - generic [ref=f3e204]: "+639292862564"
+                - paragraph [ref=f3e205]:
+                  - link "jivtuban14@gmail.com" [ref=f3e209] [cursor=pointer]:
+                    - /url: mailto:jivtuban14@gmail.com
+                - paragraph [ref=f3e210]:
+                  - generic [ref=f3e214]: Cebu, Philippines
+                - paragraph [ref=f3e215]:
+                  - link "linkedin.com/in/jiv-tuban" [ref=f3e220] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/in/jiv-tuban/
+                - paragraph [ref=f3e221]:
+                  - link "github.com/JivSTuban" [ref=f3e225] [cursor=pointer]:
+                    - /url: https://github.com/JivSTuban
+                - paragraph [ref=f3e226]:
+                  - link "farfolio.vercel.app" [ref=f3e230] [cursor=pointer]:
+                    - /url: https://farfolio.vercel.app
+            - generic [ref=f3e231]:
+              - heading "Hobbies" [level=2] [ref=f3e232]
+              - list [ref=f3e238]:
+                - listitem [ref=f3e239]: Cycling
+                - listitem [ref=f3e240]: Coding
+                - listitem [ref=f3e241]: Scripting
+                - listitem [ref=f3e242]: Sprinting
+                - listitem [ref=f3e243]: Walking
+                - listitem [ref=f3e244]: Automation
+                - listitem [ref=f3e245]: Weight Lifting
+            - generic [ref=f3e246]:
+              - heading "Skills" [level=2] [ref=f3e247]
+              - generic [ref=f3e250]:
+                - generic [ref=f3e251]:
+                  - heading "Backend" [level=3] [ref=f3e252]
+                  - paragraph [ref=f3e253]: Node.js, NestJS, Spring Boot, Django, FastAPI, Flask, ASP.NET Core, Laravel, REST APIs, microservices
+                - generic [ref=f3e254]:
+                  - heading "Frontend and mobile" [level=3] [ref=f3e255]
+                  - paragraph [ref=f3e256]: JavaScript, TypeScript, React, Next.js, Flutter, Dart, Vue.js, Angular, Svelte, Tailwind CSS, Bootstrap, Blazor
+                - generic [ref=f3e257]:
+                  - heading "Data and platforms" [level=3] [ref=f3e258]
+                  - paragraph [ref=f3e259]: Supabase, PostgreSQL, MySQL, Airtable, GoHighLevel, Google Sheets, Notion, Slack
+                - generic [ref=f3e260]:
+                  - heading "AI and automation" [level=3] [ref=f3e261]
+                  - paragraph [ref=f3e262]: OpenAI API, RAG systems, MCP, prompt engineering, Playwright, n8n, Zapier, Make, Vapi, ElevenLabs, AI agents, Claude Code, Codex CLI
+                - generic [ref=f3e263]:
+                  - heading "Cloud and DevOps" [level=3] [ref=f3e264]
+                  - paragraph [ref=f3e265]: AWS, Google Cloud Run, Pub/Sub, Secret Manager, Cloud Storage, Docker, PM2, GitHub, CI/CD, DigitalOcean, Apache Kafka
+        - generic [ref=f3e267]:
+          - generic [ref=f3e268]:
+            - heading "About Me" [level=2] [ref=f3e269]
+            - paragraph [ref=f3e273]: "I build AI automation and multi-tenant RAG systems that run in production: lead routing, ad generation, reporting pipelines and the integrations between them."
+          - generic [ref=f3e274]:
+            - heading "Experience" [level=2] [ref=f3e275]
+            - generic [ref=f3e280]:
+              - article [ref=f3e281]:
+                - generic [ref=f3e283]:
+                  - heading "AI Engineer" [level=3] [ref=f3e284]
+                  - paragraph [ref=f3e285]: Traciety
+                  - paragraph [ref=f3e286]: Apr 2026 to Present · New York, NY · Remote
+                - list [ref=f3e287]:
+                  - listitem [ref=f3e288]:
+                    - generic [ref=f3e290]: Traced why 46% of Slack booking messages were not linked to a clinic to n8n workflows using an anonymous database key that a security hardening had silently blocked (200 OK, zero rows); fixed them, lifting attribution from 54.3% to 97.0% and reviving a location sync that had failed 171 runs in a row.
+                  - listitem [ref=f3e291]:
+                    - generic [ref=f3e293]: Built a direct Meta Ads reporting pipeline that reads performance straight from Meta (34 of 48 ad accounts at launch) and measures it against GoHighLevel's numbers, so the dashboard can move off GoHighLevel as its ad-data source.
+                  - listitem [ref=f3e294]:
+                    - generic [ref=f3e296]: Corrected billing due dates that had drifted for 42 of 57 matched clients (now 0) by syncing from Notion; closed an anonymous-key read and write hole on client location tables and cleared 18 Supabase Security Advisor errors.
+                  - listitem [ref=f3e297]:
+                    - generic [ref=f3e299]: Built and extended the image-ad and HeyGen video-ad generation surfaces in the production dashboard, drawing on a 300+ ad creative library, so the team generates medspa ads from structured service and offer inputs instead of producing each asset by hand.
+                  - listitem [ref=f3e300]:
+                    - generic [ref=f3e302]: Shipped 166 merged pull requests (62% of the dashboard repo, Apr to Oct 2026); owned technical operations for 40+ client sub-accounts, 18 n8n workflows, and 6+ data systems.
+              - article [ref=f3e303]:
+                - generic [ref=f3e305]:
+                  - heading "Technical Lead" [level=3] [ref=f3e306]
+                  - paragraph [ref=f3e307]: Crowdsnare AI
+                  - paragraph [ref=f3e308]: Apr 2025 to Oct 2025 · Houston, TX · Remote
+                - list [ref=f3e309]:
+                  - listitem [ref=f3e310]:
+                    - generic [ref=f3e312]: Managed end-to-end development for 6 AI agent products while serving as the technical point of contact for clients, leadership, and junior teammates.
+                  - listitem [ref=f3e313]:
+                    - generic [ref=f3e315]: Architected production lead automation using n8n and GoHighLevel, reducing lead processing from manual hours to seconds with OpenAI, Supabase, MCP-enabled tooling, and webhook routing.
+                  - listitem [ref=f3e316]:
+                    - generic [ref=f3e318]: Restored critical production workflows by debugging logic-path routing issues, standardizing payload handling, and adding retry patterns to keep lead ingestion reliable.
+              - article [ref=f3e319]:
+                - generic [ref=f3e321]:
+                  - heading "Software Engineer Intern" [level=3] [ref=f3e322]
+                  - paragraph [ref=f3e323]: Ayahay
+                  - paragraph [ref=f3e324]: Nov 2025 to Mar 2026 · Cebu, Philippines · Hybrid
+                - list [ref=f3e325]:
+                  - listitem [ref=f3e326]:
+                    - generic [ref=f3e328]: Architected and deployed multi-tenant RAG chatbot infrastructure for Ayahay v2, shipping a backend knowledge-base SDK and React chat UI library for reusable tenant integrations.
+                  - listitem [ref=f3e329]:
+                    - generic [ref=f3e331]: Refactored chatbot services into NestJS microservices, reducing response latency by about 40% and improving retrieval recall by about 57% through similarity-threshold tuning and prompt optimization.
+                  - listitem [ref=f3e332]:
+                    - generic [ref=f3e334]: Centralized business logic for Next.js and NestJS maritime booking systems in an API gateway and optimized PostgreSQL route and schedule lookups to sub-second latency.
+              - article [ref=f3e335]:
+                - generic [ref=f3e337]:
+                  - heading "Full-Stack Developer" [level=3] [ref=f3e338]
+                  - paragraph [ref=f3e339]: Freckles Graphics, Inc.
+                  - paragraph [ref=f3e340]: Jul 2024 to Mar 2025 · Lafayette, IN · Remote
+                - list [ref=f3e341]:
+                  - listitem [ref=f3e342]:
+                    - generic [ref=f3e344]: Architected an automated production workflow for Polaris DTG printers processing 500+ daily orders, integrating ShopWorks API, WaveSpeed AI, QR generation, and intelligent artwork sizing to reduce manual processing time by 85% for a $12M+ annual revenue operation.
+                  - listitem [ref=f3e345]:
+                    - generic [ref=f3e347]: Built a Next.js and TypeScript AI image generation studio enabling designers to create 1K-4K artwork with text-to-image generation, 10-image reference composition, style presets, sub-30-second generation, and 95%+ success rates.
+                  - listitem [ref=f3e348]:
+                    - generic [ref=f3e350]: Built Python/Flask and Supabase order tooling for 5 print locations with auto-crop, transparent-border removal, white-pixel detection, and a RAG-powered eFORCE CRM assistant.
+              - article [ref=f3e351]:
+                - generic [ref=f3e353]:
+                  - heading "AI Automation Developer" [level=3] [ref=f3e354]
+                  - paragraph [ref=f3e355]: Cinematography for Actors Institute
+                  - paragraph [ref=f3e356]: Jul 2025 to Jan 2026 · Los Angeles, CA · Remote
+                - list [ref=f3e357]:
+                  - listitem [ref=f3e358]:
+                    - generic [ref=f3e360]: Architected and deployed AI-powered email automation on Google Cloud Run, reducing response time by 70% with contextual replies grounded in 50+ SOPs, FAQs, and internal company documents.
+                  - listitem [ref=f3e361]:
+                    - generic [ref=f3e363]: Built grant information request automation using Cloud Run, Node.js, and Google Drive integrations, eliminating manual notification workflows and enabling document-aware responses with attachments.
+                  - listitem [ref=f3e364]:
+                    - generic [ref=f3e366]: Managed Google Cloud infrastructure across Cloud Run, Pub/Sub, Secret Manager, and Cloud Storage while optimizing Ghost CMS mobile Lighthouse from 45 to 85+ (LCP from 15.4s to under 3.5s).
+          - generic [ref=f3e367]:
+            - heading "Awards & Competitions" [level=2] [ref=f3e368]
+            - heading "GCash ImaGnation 2025 Hackathon Winner | CAT5 Team" [level=3] [ref=f3e375]
+            - paragraph [ref=f3e376]: Nov 2025
+            - list [ref=f3e377]:
+              - listitem [ref=f3e378]:
+                - generic [ref=f3e380]: Won top prize among 196 teams and 980 students for GAssure, a blockchain-backed escrow solution addressing middle-man scams in P2P and B2B transactions.
+              - listitem [ref=f3e381]:
+                - generic [ref=f3e383]: Architected a trustless escrow flow with immutable audit trails, real-time balance tracking, and multi-party transaction handling.
+            - generic [ref=f3e384]:
+              - generic [ref=f3e385]: React
+              - generic [ref=f3e386]: Supabase
+              - generic [ref=f3e387]: Solana
+              - generic [ref=f3e388]: "@solana/web3.js"
+          - generic [ref=f3e389]:
+            - heading "Education" [level=2] [ref=f3e390]
+            - heading "BS Information Technology" [level=3] [ref=f3e394]
+            - paragraph [ref=f3e395]: Cebu Institute of Technology, University
+            - paragraph [ref=f3e396]: Graduated May 2026 · Cebu, Philippines
+            - paragraph [ref=f3e397]: "Relevant coursework: Data Structures & Algorithms, Software Engineering, Databases, Web and Mobile Development"
+          - generic [ref=f3e398]:
+            - heading "Certifications" [level=2] [ref=f3e399]
+            - list [ref=f3e403]:
+              - listitem [ref=f3e404]: Claude Code in Action, Building with the Claude API, Model Context Protocol (Intro and Advanced), Agent Skills, Subagents (18 certificates, Jun 2026) - Anthropic Academy
+              - listitem [ref=f3e405]:
+                - link "AWS Academy Graduate - Cloud Architecting" [ref=f3e406] [cursor=pointer]:
+                  - /url: https://www.credly.com/badges/6083d1f9-dc58-4b00-862b-1aa30d1776d6/public_url
+                - text: "- AWS Academy"
+              - listitem [ref=f3e407]:
+                - link "AWS Academy Graduate - Cloud Foundations" [ref=f3e408] [cursor=pointer]:
+                  - /url: https://www.credly.com/badges/1ea99f04-5769-4b9a-b8c2-a1561d48a3f9/linked_in_profile
+                - text: "- AWS Academy"
+              - listitem [ref=f3e409]:
+                - link "Foundational C# with Microsoft" [ref=f3e410] [cursor=pointer]:
+                  - /url: https://www.freecodecamp.org/certification/fcc85b5b5e9-022c-432e-83b0-35818759be8a/foundational-c-sharp-with-microsoft
+                - text: "- freeCodeCamp"
+              - listitem [ref=f3e411]:
+                - link "Java Object Oriented Programming Certification 2024" [ref=f3e412] [cursor=pointer]:
+                  - /url: https://github.com/JivSTuban/farfolio/blob/main/public/certificates/Tuban_OOP_CertificationExam
+                - text: "- Codechum"
+              - listitem [ref=f3e413]:
+                - 'link "Digital Skills: User Experience" [ref=f3e414] [cursor=pointer]':
+                  - /url: https://github.com/JivSTuban/farfolio/blob/main/public/certificates/Tuban_UXUI_Cert.pdf
+                - text: "- Accenture"
+              - listitem [ref=f3e415]:
+                - link "Python and Django Full Stack Web Developer Bootcamp" [ref=f3e416] [cursor=pointer]:
+                  - /url: https://github.com/JivSTuban/farfolio/blob/main/public/certificates/Tuban_Django_Cert.pdf
+                - text: "- Udemy"
+              - listitem [ref=f3e417]:
+                - link "The Complete 2023 PHP Full Stack Web Developer Bootcamp" [ref=f3e418] [cursor=pointer]:
+                  - /url: https://github.com/JivSTuban/farfolio/blob/main/public/certificates/Tuban_PHP_cert.pdf
+                - text: "- Udemy"
+              - listitem [ref=f3e419]:
+                - 'link "Complete Guide to Web API in .NET 8: Master API Development" [ref=f3e420] [cursor=pointer]':
+                  - /url: https://udemy-certificate.s3.amazonaws.com/pdf/UC-c58b53d0-8d58-4548-8446-b773102b99f6.pdf
+                - text: "- Udemy"
+              - listitem [ref=f3e421]:
+                - link "Angular - The Complete Guide (2025 Edition)" [ref=f3e422] [cursor=pointer]:
+                  - /url: https://udemy-certificate.s3.amazonaws.com/pdf/UC-a487006a-637e-4e7b-b781-8df5bbdf932a.pdf
+                - text: "- Udemy"
+    - generic [ref=f3e16]:
+      - generic [ref=f3e17]:
+        - heading "Hi, I am Jiv" [level=1] [ref=f3e18]:
+          - text: Hi, I am Jiv
+          - generic [aria-hidden] [ref=f3e19]: 👋
+        - paragraph [ref=f3e20]: AI Engineer building production automation and RAG systems
+      - button "View My CV" [ref=f3e28] [cursor=pointer]
+  - generic [ref=f3e33]:
+    - generic [ref=f3e36]:
+      - heading "Hi, I'm Jiv Tuban" [level=2] [ref=f3e37]
+      - paragraph [ref=f3e38]: "I build AI automation and multi-tenant RAG systems that run in production: lead routing, ad generation, reporting pipelines and the integrations between them."
+    - generic [ref=f3e40]:
+      - list [ref=f3e41]:
+        - listitem [ref=f3e42]:
+          - img "TypeScript" [ref=f3e43]
+        - listitem [ref=f3e44]:
+          - img "React" [ref=f3e45]
+        - listitem [ref=f3e46]:
+          - img "Next.js" [ref=f3e47]
+        - listitem [ref=f3e48]:
+          - img "Node.js" [ref=f3e49]
+        - listitem [ref=f3e50]:
+          - img "NestJS" [ref=f3e51]
+        - listitem [ref=f3e52]:
+          - img "Python" [ref=f3e53]
+        - listitem [ref=f3e54]:
+          - img "PostgreSQL" [ref=f3e55]
+        - listitem [ref=f3e56]:
+          - img "Supabase" [ref=f3e57]
+        - listitem [ref=f3e58]:
+          - img "n8n" [ref=f3e59]
+        - listitem [ref=f3e60]:
+          - img "Playwright" [ref=f3e61]
+        - listitem [ref=f3e62]:
+          - img "Flutter" [ref=f3e63]
+        - listitem [ref=f3e64]:
+          - img "Docker" [ref=f3e65]
+        - listitem [ref=f3e66]:
+          - img "Google Cloud" [ref=f3e67]
+        - listitem [ref=f3e68]:
+          - img "AWS" [ref=f3e69]
+        - listitem [ref=f3e70]:
+          - img "Tailwind CSS" [ref=f3e71]
+        - listitem [ref=f3e72]:
+          - img "Git" [ref=f3e73]
+      - generic [ref=f3e74]:
+        - heading "Tech Stack" [level=2] [ref=f3e75]
+        - paragraph [ref=f3e76]: TypeScript and Python services on Supabase and Postgres, n8n and Playwright for automation, Google Cloud and AWS for hosting.
+    - generic [ref=f3e85]:
+      - heading "I work across time zones" [level=2] [ref=f3e86]
+      - paragraph [ref=f3e87]:
+        - text: Based in
+        - strong [ref=f3e88]: Cebu, Philippines
+        - text: . Clients so far in New York, Houston, Los Angeles and Lafayette.
+      - button "Contact Me" [ref=f3e90] [cursor=pointer]
+    - generic [ref=f3e95]:
+      - img "Cebu Institute of Technology University seal" [ref=f3e96]
+      - generic [ref=f3e97]:
+        - heading "My Education" [level=2] [ref=f3e98]
+        - paragraph [ref=f3e99]:
+          - text: BS Information Technology, graduated May 2026 from
+          - strong [ref=f3e100]: Cebu Institute of Technology, University
+          - text: .
+    - generic [ref=f3e103]:
+      - paragraph [ref=f3e104]: Contact me
+      - button "Copy jivtuban14@gmail.com" [ref=f3e105] [cursor=pointer]:
+        - generic [ref=f3e106]: jivtuban14@gmail.com
+      - status [ref=f3e107]
+  - generic [ref=f3e109]:
+    - paragraph [ref=f3e110]: My Selected Projects
+    - generic [ref=f3e112]:
+      - img "spotlight" [ref=f3e114]
+      - img "logo" [ref=f3e116]
+      - generic [ref=f3e117]:
+        - paragraph [ref=f3e118]: AutoApply - Job Application Engine
+        - paragraph [ref=f3e119]: AutoApply is a multi-tenant job-application SaaS used by 11 people. It parses resumes, scores fit with a chain of AI models, and submits through Playwright and direct Greenhouse, Ashby, Lever, and micro1 integrations.
+        - paragraph [ref=f3e120]: An ATS collector sweeps 60 public job boards (3,186 jobs in one sweep) into an index, so each run scores about 300 listings instead of only the newest 30. 113 commits across backend, frontend, and database repos, with 377 passing tests.
+      - generic [ref=f3e121]:
+        - generic [ref=f3e122]:
+          - img "Node.js" [ref=f3e124]
+          - img "Playwright" [ref=f3e126]
+          - img "Supabase" [ref=f3e128]
+          - img "React" [ref=f3e130]
+          - img "TypeScript" [ref=f3e132]
+        - link [ref=f3e133] [cursor=pointer]:
+          - /url: https://www.autonomousapply.com
+          - paragraph [ref=f3e134]: Check Project
+          - img "arrow" [ref=f3e135]
+      - generic [ref=f3e136]:
+        - button [ref=f3e137] [cursor=pointer]:
+          - img "left arrow" [ref=f3e138]
+        - button [ref=f3e139] [cursor=pointer]:
+          - img "right arrow" [ref=f3e140]
+  - generic [ref=f3e149]:
+    - generic [ref=f3e150]:
+      - generic [ref=f3e151] [cursor=pointer]
+      - generic [ref=f3e152] [cursor=pointer]
+      - generic [ref=f3e153] [cursor=pointer]
+    - generic [ref=f3e156]:
+      - heading "Let's talk" [level=3] [ref=f3e157]
+      - paragraph [ref=f3e158]: Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to life, I’m here to help.
+      - generic [ref=f3e159]:
+        - generic [ref=f3e160]:
+          - text: Full Name
+          - textbox "Full Name" [ref=f3e161]:
+            - /placeholder: John Doe
+        - generic [ref=f3e162]:
+          - text: Email address
+          - textbox "Email address" [ref=f3e163]:
+            - /placeholder: johndoe@gmail.com
+        - generic [ref=f3e164]:
+          - text: Your message
+          - textbox "Your message" [ref=f3e165]:
+            - /placeholder: Let's create something amazing together!
+        - button [ref=f3e167] [cursor=pointer]:
+          - text: Send Message
+          - img "arrow-up" [ref=f3e168]
+  - generic [ref=f3e169]:
+    - link "jivtuban14@gmail.com" [ref=f3e170] [cursor=pointer]:
+      - /url: mailto:jivtuban14@gmail.com
+    - generic [ref=f3e171]:
+      - link "GitHub" [ref=f3e172] [cursor=pointer]:
+        - /url: https://github.com/JivSTuban
+      - link "Facebook" [ref=f3e173] [cursor=pointer]:
+        - /url: https://www.facebook.com/hart.break.31337
+      - link "LinkedIn" [ref=f3e174] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/jiv-tuban/
+    - paragraph [ref=f3e177]: © 2026 Jiv Tuban
