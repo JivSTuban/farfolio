@@ -1,0 +1,141 @@
+- main [ref=f4e3]:
+  - generic [ref=f4e6]:
+    - link "Jiv Tuban" [ref=f4e8] [cursor=pointer]:
+      - /url: https://github.com/JivSTuban
+    - navigation "Primary" [ref=f4e9]:
+      - list [ref=f4e10]:
+        - listitem [ref=f4e11]: Home
+        - listitem [ref=f4e12]: About
+        - listitem [ref=f4e13]: Work
+        - listitem [ref=f4e14]: Contact
+  - generic [ref=f4e16]:
+    - generic [ref=f4e17]:
+      - heading "Hi, I am Jiv" [level=1] [ref=f4e18]:
+        - text: Hi, I am Jiv
+        - generic [aria-hidden] [ref=f4e19]: 👋
+      - paragraph [ref=f4e20]: AI Engineer building production automation and RAG systems
+    - paragraph [ref=f4e26]: 20.00%
+    - button "View My CV" [ref=f4e28] [cursor=pointer]
+  - generic [ref=f4e33]:
+    - generic [ref=f4e36]:
+      - heading "Hi, I'm Jiv Tuban" [level=2] [ref=f4e37]
+      - paragraph [ref=f4e38]: "I build AI automation and multi-tenant RAG systems that run in production: lead routing, ad generation, reporting pipelines and the integrations between them."
+    - generic [ref=f4e40]:
+      - list [ref=f4e41]:
+        - listitem [ref=f4e42]:
+          - img "TypeScript" [ref=f4e43]
+        - listitem [ref=f4e44]:
+          - img "React" [ref=f4e45]
+        - listitem [ref=f4e46]:
+          - img "Next.js" [ref=f4e47]
+        - listitem [ref=f4e48]:
+          - img "Node.js" [ref=f4e49]
+        - listitem [ref=f4e50]:
+          - img "NestJS" [ref=f4e51]
+        - listitem [ref=f4e52]:
+          - img "Python" [ref=f4e53]
+        - listitem [ref=f4e54]:
+          - img "PostgreSQL" [ref=f4e55]
+        - listitem [ref=f4e56]:
+          - img "Supabase" [ref=f4e57]
+        - listitem [ref=f4e58]:
+          - img "n8n" [ref=f4e59]
+        - listitem [ref=f4e60]:
+          - img "Playwright" [ref=f4e61]
+        - listitem [ref=f4e62]:
+          - img "Flutter" [ref=f4e63]
+        - listitem [ref=f4e64]:
+          - img "Docker" [ref=f4e65]
+        - listitem [ref=f4e66]:
+          - img "Google Cloud" [ref=f4e67]
+        - listitem [ref=f4e68]:
+          - img "AWS" [ref=f4e69]
+        - listitem [ref=f4e70]:
+          - img "Tailwind CSS" [ref=f4e71]
+        - listitem [ref=f4e72]:
+          - img "Git" [ref=f4e73]
+      - generic [ref=f4e74]:
+        - heading "Tech Stack" [level=2] [ref=f4e75]
+        - paragraph [ref=f4e76]: TypeScript and Python services on Supabase and Postgres, n8n and Playwright for automation, Google Cloud and AWS for hosting.
+    - generic [ref=f4e85]:
+      - heading "I work across time zones" [level=2] [ref=f4e86]
+      - paragraph [ref=f4e87]:
+        - text: Based in
+        - strong [ref=f4e88]: Cebu, Philippines
+        - text: . Clients so far in New York, Houston, Los Angeles and Lafayette.
+      - button "Contact Me" [ref=f4e90] [cursor=pointer]
+    - generic [ref=f4e95]:
+      - img "Cebu Institute of Technology University seal" [ref=f4e96]
+      - generic [ref=f4e97]:
+        - heading "My Education" [level=2] [ref=f4e98]
+        - paragraph [ref=f4e99]:
+          - text: BS Information Technology, graduated May 2026 from
+          - strong [ref=f4e100]: Cebu Institute of Technology, University
+          - text: .
+    - generic [ref=f4e103]:
+      - paragraph [ref=f4e104]: Contact me
+      - button "Copy jivtuban14@gmail.com" [ref=f4e105] [cursor=pointer]:
+        - generic [ref=f4e106]: jivtuban14@gmail.com
+      - status [ref=f4e107]
+  - generic [ref=f4e109]:
+    - paragraph [ref=f4e110]: My Selected Projects
+    - generic [ref=f4e111]:
+      - generic [ref=f4e112]:
+        - img "spotlight" [ref=f4e114]
+        - img "logo" [ref=f4e116]
+        - generic [ref=f4e117]:
+          - paragraph [ref=f4e118]: AutoApply - Job Application Engine
+          - paragraph [ref=f4e119]: AutoApply is a multi-tenant job-application SaaS used by 11 people. It parses resumes, scores fit with a chain of AI models, and submits through Playwright and direct Greenhouse, Ashby, Lever, and micro1 integrations.
+          - paragraph [ref=f4e120]: An ATS collector sweeps 60 public job boards (3,186 jobs in one sweep) into an index, so each run scores about 300 listings instead of only the newest 30. 113 commits across backend, frontend, and database repos, with 377 passing tests.
+        - generic [ref=f4e121]:
+          - generic [ref=f4e122]:
+            - img "Node.js" [ref=f4e124]
+            - img "Playwright" [ref=f4e126]
+            - img "Supabase" [ref=f4e128]
+            - img "React" [ref=f4e130]
+            - img "TypeScript" [ref=f4e132]
+          - link [ref=f4e133] [cursor=pointer]:
+            - /url: https://www.autonomousapply.com
+            - paragraph [ref=f4e134]: Check Project
+            - img "arrow" [ref=f4e135]
+        - generic [ref=f4e136]:
+          - button [ref=f4e137] [cursor=pointer]:
+            - img "left arrow" [ref=f4e138]
+          - button [ref=f4e139] [cursor=pointer]:
+            - img "right arrow" [ref=f4e140]
+      - paragraph [ref=f4e146]: 20.00%
+  - generic [ref=f4e149]:
+    - generic [ref=f4e150]:
+      - generic [ref=f4e151] [cursor=pointer]
+      - generic [ref=f4e152] [cursor=pointer]
+      - generic [ref=f4e153] [cursor=pointer]
+    - generic [ref=f4e156]:
+      - heading "Let's talk" [level=3] [ref=f4e157]
+      - paragraph [ref=f4e158]: Whether you’re looking to build a new website, improve your existing platform, or bring a unique project to life, I’m here to help.
+      - generic [ref=f4e159]:
+        - generic [ref=f4e160]:
+          - text: Full Name
+          - textbox "Full Name" [ref=f4e161]:
+            - /placeholder: John Doe
+        - generic [ref=f4e162]:
+          - text: Email address
+          - textbox "Email address" [ref=f4e163]:
+            - /placeholder: johndoe@gmail.com
+        - generic [ref=f4e164]:
+          - text: Your message
+          - textbox "Your message" [ref=f4e165]:
+            - /placeholder: Let's create something amazing together!
+        - button [ref=f4e167] [cursor=pointer]:
+          - text: Send Message
+          - img "arrow-up" [ref=f4e168]
+  - generic [ref=f4e169]:
+    - link "jivtuban14@gmail.com" [ref=f4e170] [cursor=pointer]:
+      - /url: mailto:jivtuban14@gmail.com
+    - generic [ref=f4e171]:
+      - link "GitHub" [ref=f4e172] [cursor=pointer]:
+        - /url: https://github.com/JivSTuban
+      - link "Facebook" [ref=f4e173] [cursor=pointer]:
+        - /url: https://www.facebook.com/hart.break.31337
+      - link "LinkedIn" [ref=f4e174] [cursor=pointer]:
+        - /url: https://www.linkedin.com/in/jiv-tuban/
+    - paragraph [ref=f4e177]: © 2026 Jiv Tuban
