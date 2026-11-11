@@ -18,7 +18,7 @@ export const experience = [
   {
     code: 'TRC',
     role: 'AI Engineer',
-    type: 'Contract, flexible hours',
+    type: 'Full-time',
     company: 'Traciety',
     place: 'New York, NY',
     mode: 'Remote',
@@ -26,11 +26,9 @@ export const experience = [
     end: 'Present',
     logo: '/assets/traciety_logo.jpeg',
     bullets: [
-      'Traced why 46% of Slack booking messages were not linked to a clinic to n8n workflows using an anonymous database key that a security hardening had silently blocked (200 OK, zero rows); fixed them, lifting attribution from 54.3% to 97.0% and reviving a location sync that had failed 171 runs in a row.',
-      "Built a direct Meta Ads reporting pipeline that reads performance straight from Meta (34 of 48 ad accounts at launch) and measures it against GoHighLevel's numbers, so the dashboard can move off GoHighLevel as its ad-data source.",
-      'Corrected billing due dates that had drifted for 42 of 57 matched clients (now 0) by syncing from Notion; closed an anonymous-key read and write hole on client location tables and cleared 18 Supabase Security Advisor errors.',
-      'Built and extended the image-ad and HeyGen video-ad generation surfaces in the production dashboard, drawing on a 300+ ad creative library, so the team generates medspa ads from structured service and offer inputs instead of producing each asset by hand.',
-      'Shipped 166 merged pull requests (62% of the dashboard repo, Apr to Oct 2026); owned technical operations for 40+ client sub-accounts, 18 n8n workflows, and 6+ data systems.',
+      'Cut automation spend 98%, about $7,000 a year ($600 to $12 a month), by moving workflows from Make.com to n8n self-hosted on DigitalOcean.',
+      'Replaced the stat sheets executives built by hand (about 1 hour per client per week) for all 45 live clinics, and built the client portal now live for about 20 clients.',
+      'Raised Slack booking attribution from 54.3% to 97.0% and corrected ad reporting that showed $14,360 against a true $30,100 of spend.',
     ],
   },
   {
